@@ -10,4 +10,4 @@ def index(request):
 	
 	query = models.Product.objects.all()
 	
-	return render(request, 'products/index.html', {'query': query})
+	return render(request, 'products/page.html', {'query': query})
