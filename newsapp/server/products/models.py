@@ -6,6 +6,8 @@ class Product(models.Model):
 	
 	image = models.ImageField()
 	
+	category = models.ForeignKey('categories.Category', on_delete=models.CASCADE)
+	
 	content = models.TextField()
 	
 	cost = models.DecimalField(max_digits=7, decimal_places=2)
