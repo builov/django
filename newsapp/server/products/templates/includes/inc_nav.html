@@ -1,0 +1,111 @@
+							<div class="nav">
+                            	<span class="close"></span>
+								<span class="open"></span>
+                                <nav>
+									<div id="tmsearch" class="clearfix">
+										<form id="tmsearchbox" method="get" action="" >
+											<input type="hidden" name="controller" value="search" />
+											<input type="hidden" name="orderby" value="position" />
+											<input type="hidden" name="orderway" value="desc" />
+											<div class="currentBox"></div>
+											<input class="tm_search_query form-control toogle_content_box" type="text" id="tm_search_query" name="search_query" placeholder="Поиск" value="" />
+											<button type="submit" name="tm_submit_search" class="btn btn-default button-search">
+												<span>Поиск</span>
+											</button>
+										</form>
+									</div>
+									
+									
+									<div id="header-login">
+										<div class="currentBox header_user_info login"><a href="#" onclick="return false;"><span>Войти</span></a></div>
+										<ul id="header-login-content" class="toogle_content_box">
+											<li>
+												<form action="" method="post" id="header_login_form">
+														<div id="create_header_account_error" class="alert alert-danger" style="display:none;"></div>
+														<div class="form_content clearfix">
+															<div class="form-group">
+																<input class="is_required validate account_input form-control" data-validate="isEmail" type="text" id="header-email" name="header-email" placeholder="E-mail адрес" value="" />
+															</div>
+															<div class="form-group">
+																<span><input class="is_required validate account_input form-control" type="password" data-validate="isPasswd" id="header-passwd" name="header-passwd" placeholder="Пароль" value="" autocomplete="off" /></span>
+															</div>
+															<p class="submit">
+																<button type="button" id="HeaderSubmitLogin" name="HeaderSubmitLogin"><span>Войти</span></button>
+															</p>
+															<p>
+																<a href=""><span>Create an account</span></a>
+															</p>
+															<div class="clearfix">
+																<a class="btn btn-default btn-sm btn-login-facebook" href="" title="Войти с помощью Facebook">Facebook Вход</a>
+																<a class="btn btn-default btn-sm btn-login-google" href="" title="Войти с помощью Google">Google Вход</a>
+															</div>
+														</div>
+												</form>
+											</li>
+										</ul>
+									</div>
+									
+									<!-- Block currencies module -->
+									<div class="currency_language">
+										<div class="currentBox"></div>
+										<div class="toogle_content_box">
+											<div id="currencies-block-top">
+												<form id="setCurrency" action="" method="post">
+													<div class="current">
+														<input type="hidden" name="id_currency" id="id_currency" value=""/>
+														<input type="hidden" name="SubmitCurrency" value="" />
+														<span class="cur-label">Валюта :</span>
+														<strong>USD</strong>
+													</div>
+													<ul id="first-currencies" class="currencies_ul toogle_content">
+														<li class="selected">
+															<a href="javascript:setCurrency(1);" rel="nofollow" title="Dollar (USD)">
+																Dollar (USD)
+															</a>
+														</li>
+														<li >
+															<a href="javascript:setCurrency(2);" rel="nofollow" title="Euro (EUR)">
+																Euro (EUR)
+															</a>
+														</li>
+													</ul>
+												</form>
+											</div>
+										<!-- /Block currencies module -->
+
+										<!-- Block languages module -->
+											<div id="languages-block-top" class="languages-block">
+												<div class="current">
+													<span>Russian</span>
+												</div>
+												<ul id="first-languages" class="languages-block_ul toogle_content">
+													<li >
+														<a href="" title="English (English)">
+															<span>English</span>
+														</a>
+													</li>
+													<li >
+														<a href="" title="Deutsch (German)">
+															<span>Deutsch</span>
+														</a>
+													</li>
+													<li class="selected">
+														<span>Russian</span>
+													</li>
+													<li >
+														<a href="" title="Español (Spanish)">
+															<span>Español</span>
+														</a>
+													</li>
+													<li >
+														<a href="" title="Français (French)">
+															<span>Français</span>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								<!-- /Block languages module -->
+								</nav>
+                            </div>
