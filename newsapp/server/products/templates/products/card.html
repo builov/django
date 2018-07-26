@@ -1,64 +1,57 @@
-<!DOCTYPE HTML>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ru-ru"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8 ie7" lang="ru-ru"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="ru-ru"><![endif]-->
-<!--[if gt IE 8]> <html class="no-js ie9" lang="ru-ru"><![endif]-->
-<html lang="ru-ru">
-	<head>
-		<meta charset="utf-8" />
-		<title>The Norton Anthology of English  - Book Hangover</title>
-		<!--base href="https://livedemo00.template-help.com/"-->
-		<meta name="description" content="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them." />
+{% extends 'master.html' %}
+
+{% block page_title %}The Norton Anthology of English  - Book Hangover{% endblock %}
+
+{% block page_description %}Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.{% endblock %}
+
+{% block page_static %}
 		<meta name="generator" content="PrestaShop" />
 		<meta name="robots" content="index,follow" />
 		<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.0, initial-scale=1.0" /> 
 		<meta name="apple-mobile-web-app-capable" content="yes" /> 
-		<link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico?1463616247" />
-		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico?1463616247" />
-			<link rel="stylesheet" href="css/global.css" media="all" />
-			<link rel="stylesheet" href="css/autoload/highdpi.css" media="all" />
-			<link rel="stylesheet" href="css/autoload/responsive-tables.css" media="all" />
-			<link rel="stylesheet" href="css/autoload/uniform.default.css" media="all" />
-			<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" media="all" />
-			<link rel="stylesheet" href="css/product_list.css" media="all" />
-			<link rel="stylesheet" href="css/category.css" media="all" />
-			<link rel="stylesheet" href="css/scenes.css" media="all" />
-			<link rel="stylesheet" href="css/modules/blockcart/blockcart.css" media="all" />
-			<link rel="stylesheet" href="js/bxslider/jquery.bxslider.css" media="all" />
-			<link rel="stylesheet" href="css/modules/blockcategories/blockcategories.css" media="all" />
-			<link rel="stylesheet" href="css/modules/blockcurrencies/blockcurrencies.css" media="all" />
-			<link rel="stylesheet" href="css/modules/blocklanguages/blocklanguages.css" media="all" />
-			<link rel="stylesheet" href="css/modules/blockcontact/blockcontact.css" media="all" />
-			<link rel="stylesheet" href="css/modules/blocknewsletter/blocknewsletter.css" media="all" />
-			<link rel="stylesheet" href="css/modules/blocksearch/blocksearch.css" media="all" />
-			<link rel="stylesheet" href="js/autocomplete/jquery.autocomplete.css" media="all" />
-			<link rel="stylesheet" href="css/modules/blocktags/blocktags.css" media="all" />
-			<link rel="stylesheet" href="css/modules/blockviewed/blockviewed.css" media="all" />
-			<link rel="stylesheet" href="css/modules/themeconfigurator/css/hooks.css" media="all" />
-			<link rel="stylesheet" href="css/modules/themeconfigurator/css/live_configurator.css" media="all" />
-			<link rel="stylesheet" href="css/modules/blockwishlist/blockwishlist.css" media="all" />
-			<link rel="stylesheet" href="css/modules/productcomments/productcomments.css" media="all" />
-			<link rel="stylesheet" href="css/modules/blockpermanentlinks/blockpermanentlinks.css" media="all" />
-			<link rel="stylesheet" href="css/modules/smartblog/css/smartblogstyle.css" media="all" />
-			<link rel="stylesheet" href="css/modules/smartbloglatestnews/css/smartbloglatestnews.css" media="all" />
-			<link rel="stylesheet" href="css/modules/smartblogtag/css/smartblogtags.css" media="all" />			
-			<link rel="stylesheet" href="modules/tmproductvideos/css/tmproductvideos.css" media="all" />
-			<link rel="stylesheet" href="css/modules/tmheaderaccount/css/front.css" media="all" />
-			<link rel="stylesheet" href="modules/tmmediaparallax/css/tm-media-parallax-styles.css" media="all" />
-			<link rel="stylesheet" href="css/modules/tmhtmlcontent/css/hooks.css" media="all" />
-			<link rel="stylesheet" href="css/modules/tmproductlistgallery/css/front.css" media="all" />
-			<link rel="stylesheet" href="css/modules/tmmegamenu/views/css/front.css" media="all" />
-			<!--link rel="stylesheet" href="css/modules/tmnewsletter/views/css/front.css" media="all" /-->
-			<link rel="stylesheet" href="modules/tmsociallogin/views/css/front.css" media="all" />
-			<link rel="stylesheet" href="css/modules/tmsearch/views/css/tmsearch.css" media="all" />			
+		<link rel="icon" type="image/vnd.microsoft.icon" href="/static/products/img/favicon.ico?1463616247" />
+		<link rel="shortcut icon" type="image/x-icon" href="/static/products/img/favicon.ico?1463616247" />
+			<link rel="stylesheet" href="/static/products/css/global.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/autoload/highdpi.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/autoload/responsive-tables.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/autoload/uniform.default.css" media="all" />
+			<link rel="stylesheet" href="/static/products/js/fancybox/jquery.fancybox.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/product_list.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/category.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/scenes.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/blockcart/blockcart.css" media="all" />
+			<link rel="stylesheet" href="/static/products/js/bxslider/jquery.bxslider.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/blockcategories/blockcategories.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/blockcurrencies/blockcurrencies.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/blocklanguages/blocklanguages.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/blockcontact/blockcontact.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/blocknewsletter/blocknewsletter.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/blocksearch/blocksearch.css" media="all" />
+			<link rel="stylesheet" href="/static/products/js/autocomplete/jquery.autocomplete.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/blocktags/blocktags.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/blockviewed/blockviewed.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/themeconfigurator/css/hooks.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/themeconfigurator/css/live_configurator.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/blockwishlist/blockwishlist.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/productcomments/productcomments.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/blockpermanentlinks/blockpermanentlinks.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/smartblog/css/smartblogstyle.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/smartbloglatestnews/css/smartbloglatestnews.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/smartblogtag/css/smartblogtags.css" media="all" />			
+			<link rel="stylesheet" href="/static/products/modules/tmproductvideos/css/tmproductvideos.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/tmheaderaccount/css/front.css" media="all" />
+			<link rel="stylesheet" href="/static/products/modules/tmmediaparallax/css/tm-media-parallax-styles.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/tmhtmlcontent/css/hooks.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/tmproductlistgallery/css/front.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/tmmegamenu/views/css/front.css" media="all" />
+			<link rel="stylesheet" href="/static/products/modules/tmsociallogin/views/css/front.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/tmsearch/views/css/tmsearch.css" media="all" />			
 			
-			<link rel="stylesheet" href="css/product.css" media="all" />
-			<link rel="stylesheet" href="css/print.css" media="print" />
-			<link rel="stylesheet" href="js/jquery.jqzoom.css" media="all" />
-			<link rel="stylesheet" href="css/modules/socialsharing/css/socialsharing.css" media="all" />			
-			<link rel="stylesheet" href="css/sendtoafriend.css" media="all" />
-			
-			
+			<link rel="stylesheet" href="/static/products/css/product.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/print.css" media="print" />
+			<link rel="stylesheet" href="/static/products/js/jquery.jqzoom.css" media="all" />
+			<link rel="stylesheet" href="/static/products/css/modules/socialsharing/css/socialsharing.css" media="all" />			
+			<link rel="stylesheet" href="/static/products/css/sendtoafriend.css" media="all" />
 			
 		<script type="text/javascript">
 var CUSTOMIZE_TEXTFIELD = 1;
@@ -103,9 +96,9 @@ var hasDeliveryAddress = false;
 var idDefaultImage = 9;
 var id_lang = 3;
 var id_product = 2;
-var img_dir = '/img/';
-var img_prod_dir = '/img/p/';
-var img_ps_dir = '/img/';
+var img_dir = '/static/products/img/';
+var img_prod_dir = '/static/products/img/p/';
+var img_ps_dir = '/static/products/img/';
 var instantsearch = true;
 var isGuest = 0;
 var isLogged = 0;
@@ -156,7 +149,7 @@ var scrool_speed = 800;
 var search_url = '';
 var search_url_local = '';
 var secure_key = '';
-var sharing_img = 'img/p/9/9.jpg';
+var sharing_img = '/static/products/img/p/9/9.jpg';
 var sharing_name = 'The Norton Anthology of English ';
 var sharing_url = '';
 var specific_currency = false;
@@ -191,54 +184,52 @@ var usingSecureMode = true;
 var wishlistProductsIds = false;
 
 </script>			
-			<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-			<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-			<script type="text/javascript" src="js/jquery.easing.js"></script>
-			<script type="text/javascript" src="js/tools.js"></script>
-			<script type="text/javascript" src="js/global.js"></script>
-			<script type="text/javascript" src="js/autoload/10-bootstrap.min.js"></script>
-			<script type="text/javascript" src="js/autoload/14-device.min.js"></script>
-			<script type="text/javascript" src="js/autoload/15-jquery.total-storage.min.js"></script>
-			<script type="text/javascript" src="js/autoload/15-jquery.uniform-modified.js"></script>
-			<script type="text/javascript" src="js/autoload/16-jquery.scrollmagic.min.js"></script>
-			<script type="text/javascript" src="js/autoload/17-jquery.scrollmagic.debug.js"></script>
-			<script type="text/javascript" src="js/autoload/18-TimelineMax.min.js"></script>
-			<script type="text/javascript" src="js/autoload/19-TweenMax.min.js"></script>
-			<script type="text/javascript" src="js/fancybox/jquery.fancybox.js"></script>
-			<script type="text/javascript" src="js/products-comparison.js"></script>
-			<script type="text/javascript" src="js/category.js"></script>
-			<script type="text/javascript" src="js/modules/blockcart/ajax-cart.js"></script>
-			<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
-			<script type="text/javascript" src="js/jquery.serialScroll.js"></script>
-			<script type="text/javascript" src="js/bxslider/jquery.bxslider.js"></script>
-			<script type="text/javascript" src="js/tools/treeManagement.js"></script>
-			<script type="text/javascript" src="js/modules/blocknewsletter/blocknewsletter.js"></script>
-			<script type="text/javascript" src="js/autocomplete/jquery.autocomplete.js"></script>
-			<script type="text/javascript" src="js/modules/blocksearch/blocksearch.js"></script>
-			<!--script type="text/javascript" src="js/live_configurator.js"></script-->
-			<script type="text/javascript" src="js/modules/blockwishlist/js/ajax-wishlist.js"></script>
-			<script type="text/javascript" src="js/validate.js"></script>
-			<script type="text/javascript" src="modules/tmheaderaccount/js/front.js"></script>
-			<script type="text/javascript" src="modules/tmmediaparallax/js/device.min.js"></script>
-			<script type="text/javascript" src="modules/tmmediaparallax/js/tm-media-parallax.js"></script>
-			<script type="text/javascript" src="modules/tmproductlistgallery/js/front.js"></script>
-			<script type="text/javascript" src="modules/tmmegamenu/views/js/hoverIntent.js"></script>
-			<script type="text/javascript" src="modules/tmmegamenu/views/js/superfish.js"></script>
-			<script type="text/javascript" src="js/modules/tmmegamenu/views/js/front.js"></script>
-			<!--script type="text/javascript" src="modules/tmnewsletter/views/js/front.js"></script-->
-			<script type="text/javascript" src="modules/tmsearch/views/js/tmsearch.js"></script>
+			<script type="text/javascript" src="/static/products/js/jquery-1.11.0.min.js"></script>
+			<script type="text/javascript" src="/static/products/js/jquery-migrate-1.2.1.min.js"></script>
+			<script type="text/javascript" src="/static/products/js/jquery.easing.js"></script>
+			<script type="text/javascript" src="/static/products/js/tools.js"></script>
+			<script type="text/javascript" src="/static/products/js/global.js"></script>
+			<script type="text/javascript" src="/static/products/js/autoload/10-bootstrap.min.js"></script>
+			<script type="text/javascript" src="/static/products/js/autoload/14-device.min.js"></script>
+			<script type="text/javascript" src="/static/products/js/autoload/15-jquery.total-storage.min.js"></script>
+			<script type="text/javascript" src="/static/products/js/autoload/15-jquery.uniform-modified.js"></script>
+			<script type="text/javascript" src="/static/products/js/autoload/16-jquery.scrollmagic.min.js"></script>
+			<script type="text/javascript" src="/static/products/js/autoload/17-jquery.scrollmagic.debug.js"></script>
+			<script type="text/javascript" src="/static/products/js/autoload/18-TimelineMax.min.js"></script>
+			<script type="text/javascript" src="/static/products/js/autoload/19-TweenMax.min.js"></script>
+			<script type="text/javascript" src="/static/products/js/fancybox/jquery.fancybox.js"></script>
+			<script type="text/javascript" src="/static/products/js/products-comparison.js"></script>
+			<script type="text/javascript" src="/static/products/js/category.js"></script>
+			<script type="text/javascript" src="/static/products/js/modules/blockcart/ajax-cart.js"></script>
+			<script type="text/javascript" src="/static/products/js/jquery.scrollTo.js"></script>
+			<script type="text/javascript" src="/static/products/js/jquery.serialScroll.js"></script>
+			<script type="text/javascript" src="/static/products/js/bxslider/jquery.bxslider.js"></script>
+			<script type="text/javascript" src="/static/products/js/tools/treeManagement.js"></script>
+			<script type="text/javascript" src="/static/products/js/modules/blocknewsletter/blocknewsletter.js"></script>
+			<script type="text/javascript" src="/static/products/js/autocomplete/jquery.autocomplete.js"></script>
+			<script type="text/javascript" src="/static/products/js/modules/blocksearch/blocksearch.js"></script>
+			<script type="text/javascript" src="/static/products/js/modules/blockwishlist/js/ajax-wishlist.js"></script>
+			<script type="text/javascript" src="/static/products/js/validate.js"></script>
+			<script type="text/javascript" src="/static/products/modules/tmheaderaccount/js/front.js"></script>
+			<script type="text/javascript" src="/static/products/modules/tmmediaparallax/js/device.min.js"></script>
+			<script type="text/javascript" src="/static/products/modules/tmmediaparallax/js/tm-media-parallax.js"></script>
+			<script type="text/javascript" src="/static/products/modules/tmproductlistgallery/js/front.js"></script>
+			<script type="text/javascript" src="/static/products/modules/tmmegamenu/views/js/hoverIntent.js"></script>
+			<script type="text/javascript" src="/static/products/modules/tmmegamenu/views/js/superfish.js"></script>
+			<script type="text/javascript" src="/static/products/js/modules/tmmegamenu/views/js/front.js"></script>
+			<script type="text/javascript" src="/static/products/modules/tmsearch/views/js/tmsearch.js"></script>
 			
-			<script type="text/javascript" src="js/jquery.idTabs.js"></script>
-			<script type="text/javascript" src="js/product.js"></script>
-			<script type="text/javascript" src="js/jquery.jqzoom.js"></script>
-			<script type="text/javascript" src="js/socialsharing.js"></script>
-			<script type="text/javascript" src="js/modules/blockcart/ajax-cart.js"></script>
-			<script type="text/javascript" src="js/jquery.rating.pack.js"></script>
-			<script type="text/javascript" src="js/modules/sendtoafriend/sendtoafriend.js"></script>
-			<script type="text/javascript" src="js/modules/crossselling/js/crossselling.js"></script>
-			<script type="text/javascript" src="js/modules/productscategory/js/productscategory.js"></script>
-			<script type="text/javascript" src="js/jquery.textareaCounter.plugin.js"></script>
-			<script type="text/javascript" src="js/modules/productcomments/js/productcomments.js"></script>
+			<script type="text/javascript" src="/static/products/js/jquery.idTabs.js"></script>
+			<script type="text/javascript" src="/static/products/js/product.js"></script>
+			<script type="text/javascript" src="/static/products/js/jquery.jqzoom.js"></script>
+			<script type="text/javascript" src="/static/products/js/socialsharing.js"></script>
+			<script type="text/javascript" src="/static/products/js/modules/blockcart/ajax-cart.js"></script>
+			<script type="text/javascript" src="/static/products/js/jquery.rating.pack.js"></script>
+			<script type="text/javascript" src="/static/products/js/modules/sendtoafriend/sendtoafriend.js"></script>
+			<script type="text/javascript" src="/static/products/js/modules/crossselling/js/crossselling.js"></script>
+			<script type="text/javascript" src="/static/products/js/modules/productscategory/js/productscategory.js"></script>
+			<script type="text/javascript" src="/static/products/js/jquery.textareaCounter.plugin.js"></script>
+			<script type="text/javascript" src="/static/products/js/modules/productcomments/js/productcomments.js"></script>
 			
 			<meta property="og:title" content="The Norton Anthology of English  - Book Hangover" />
 			<meta property="og:url" content="" />
@@ -251,48 +242,16 @@ var wishlistProductsIds = false;
 			<meta property="og:locality" content="" />
 			<meta property="og:country-name" content="" />
 			<meta property="og:postal-code" content="" />
-			<meta property="og:image" content="img/p/9/9-large_default.jpg" />
-			
-<!--script type="text/javascript">
-	function addVideoParallax(selector, path, filename)
-	{
-		var selector = $(selector);
-
-		selector.addClass('parallax_section');
-		selector.attr('data-type-media', 'video_html');
-		selector.attr('data-mp4', 'true');
-		selector.attr('data-webm', 'true');
-		selector.attr('data-ogv', 'true');
-		selector.attr('data-poster', 'true');
-		selector.wrapInner('<div class="container parallax_content"></div>');
-		selector.append('<div class="parallax_inner"><video class="parallax_media" width="100%" height="100%" autoplay loop poster="/prestashop_54824/'+path+filename+'.jpg"><source src="/prestashop_54824/'+path+filename+'.mp4" type="video/mp4"><source src="/prestashop_54824/'+path+filename+'.webdm" type="video/webm"><source src="/prestashop_54824/'+path+filename+'.ogv" type="video/ogg"></video></div>');
-
-		selector.tmMediaParallax();
-	}
-	
-	function addImageParallax(selector, path, filename, width, height)
-	{
-		var selector = $(selector);
-
-		selector.addClass('parallax_section');
-		selector.attr('data-type-media', 'image');
-		selector.wrapInner('<div class="container parallax_content"></div>');
-		selector.append('<div class="parallax_inner"><img class="parallax_media" src="/prestashop_54824/'+path+filename+'" data-base-width="'+width+'" data-base-height="'+height+'"/></div>');
-
-		selector.tmMediaParallax();
-	}
-
-	$(window).load(function(){
-						addImageParallax('#htmlcontent_home','modules/tmmediaparallax/media/','parallax-1.jpg','1798','1499');
-					});
-</script-->
+			<meta property="og:image" content="/static/products/img/p/9/9-large_default.jpg" />			
 
         <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic' rel='stylesheet' type='text/css'>
 		<!--[if IE 8]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 		<![endif]-->
-	</head>
+{% endblock %}
+	
+{% block page_content %}
 		<body id="product" class="product product-2 product-the-norton-anthology-of-english-literature-ninth-edition-vol-package-1-a-b-c category-2 category-home hide-left-column hide-right-column lang_ru  one-column">
 	    	<!--[if IE 8]>
         <div style='clear:both;height:59px;padding:0 15px 0 15px;position:relative;z-index:10000;text-align:center;'><a href="//www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="https://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div>
@@ -418,7 +377,7 @@ var wishlistProductsIds = false;
                             </div>
                             <div id="header_logo">
                                 <a href="" title="Book Hangover">
-                                    <img class="logo img-responsive" src="img/new-store-logo-1433086504.jpg" alt="Book Hangover" width="66" height="62"/>
+                                    <img class="logo img-responsive" src="/static/products/img/new-store-logo-1433086504.jpg" alt="Book Hangover" width="66" height="62"/>
                                 </a>
                             </div>
                             <!-- MODULE Block cart -->
@@ -601,8 +560,8 @@ var wishlistProductsIds = false;
                                 <span class="sale-label">Распродажа!</span>
                             </span>
                                                                             <span id="view_full_size">
-                                                                    <a class="jqzoom" title="The Norton Anthology of English " rel="gal1" href="img/p/9/9-tm_thickbox_default.jpg" itemprop="url">
-                                        <img itemprop="image" src="img/p/9/9-tm_large_default.jpg" title="The Norton Anthology of English " alt="The Norton Anthology of English "/>
+                                                                    <a class="jqzoom" title="The Norton Anthology of English " rel="gal1" href="/static/products/img/p/9/9-tm_thickbox_default.jpg" itemprop="url">
+                                        <img itemprop="image" src="/static/products/img/p/9/9-tm_large_default.jpg" title="The Norton Anthology of English " alt="The Norton Anthology of English "/>
                                     </a>
                                                             </span>
                                             </div> <!-- end image-block -->
@@ -617,73 +576,73 @@ var wishlistProductsIds = false;
                                                                                                                                                                                                                                                                                                             <li id="thumbnail_9">
                                                 <a 
                                                                                                             href="javascript:void(0);"
-                                                        rel="{gallery: 'gal1', smallimage: 'img/p/9/9-tm_large_default.jpg',largeimage: 'img/p/9/9-tm_thickbox_default.jpg'}"
+                                                        rel="{gallery: 'gal1', smallimage: '/static/products/img/p/9/9-tm_large_default.jpg',largeimage: '/static/products/img/p/9/9-tm_thickbox_default.jpg'}"
                                                                                                         title="The Norton Anthology of English ">
-                                                    <img class="img-responsive" id="thumb_9" src="img/p/9/9-tm_cart_default.jpg" alt="The Norton Anthology of English " title="The Norton Anthology of English " height="114" width="80" itemprop="image" />
+                                                    <img class="img-responsive" id="thumb_9" src="/static/products/img/p/9/9-tm_cart_default.jpg" alt="The Norton Anthology of English " title="The Norton Anthology of English " height="114" width="80" itemprop="image" />
                                                 </a>
                                             </li>
                                                                                                                                                                                                                                                                         <li id="thumbnail_10">
                                                 <a 
                                                                                                             href="javascript:void(0);"
-                                                        rel="{gallery: 'gal1', smallimage: 'img/p/1/0/10-tm_large_default.jpg',largeimage: 'img/p/1/0/10-tm_thickbox_default.jpg'}"
+                                                        rel="{gallery: 'gal1', smallimage: '/static/products/img/p/1/0/10-tm_large_default.jpg',largeimage: '/static/products/img/p/1/0/10-tm_thickbox_default.jpg'}"
                                                                                                         title="The Norton Anthology of English ">
-                                                    <img class="img-responsive" id="thumb_10" src="img/p/1/0/10-tm_cart_default.jpg" alt="The Norton Anthology of English " title="The Norton Anthology of English " height="114" width="80" itemprop="image" />
+                                                    <img class="img-responsive" id="thumb_10" src="/static/products/img/p/1/0/10-tm_cart_default.jpg" alt="The Norton Anthology of English " title="The Norton Anthology of English " height="114" width="80" itemprop="image" />
                                                 </a>
                                             </li>
                                                                                                                                                                                                                                                                         <li id="thumbnail_11">
                                                 <a 
                                                                                                             href="javascript:void(0);"
-                                                        rel="{gallery: 'gal1', smallimage: 'img/p/1/1/11-tm_large_default.jpg',largeimage: 'img/p/1/1/11-tm_thickbox_default.jpg'}"
+                                                        rel="{gallery: 'gal1', smallimage: '/static/products/img/p/1/1/11-tm_large_default.jpg',largeimage: '/static/products/img/p/1/1/11-tm_thickbox_default.jpg'}"
                                                                                                         title="The Norton Anthology of English ">
-                                                    <img class="img-responsive" id="thumb_11" src="img/p/1/1/11-tm_cart_default.jpg" alt="The Norton Anthology of English " title="The Norton Anthology of English " height="114" width="80" itemprop="image" />
+                                                    <img class="img-responsive" id="thumb_11" src="/static/products/img/p/1/1/11-tm_cart_default.jpg" alt="The Norton Anthology of English " title="The Norton Anthology of English " height="114" width="80" itemprop="image" />
                                                 </a>
                                             </li>
                                                                                                                                                                                                                                                                         <li id="thumbnail_12">
                                                 <a 
                                                                                                             href="javascript:void(0);"
-                                                        rel="{gallery: 'gal1', smallimage: 'img/p/1/2/12-tm_large_default.jpg',largeimage: 'img/p/1/2/12-tm_thickbox_default.jpg'}"
+                                                        rel="{gallery: 'gal1', smallimage: '/static/products/img/p/1/2/12-tm_large_default.jpg',largeimage: '/static/products/img/p/1/2/12-tm_thickbox_default.jpg'}"
                                                                                                         title="The Norton Anthology of English ">
-                                                    <img class="img-responsive" id="thumb_12" src="img/p/1/2/12-tm_cart_default.jpg" alt="The Norton Anthology of English " title="The Norton Anthology of English " height="114" width="80" itemprop="image" />
+                                                    <img class="img-responsive" id="thumb_12" src="/static/products/img/p/1/2/12-tm_cart_default.jpg" alt="The Norton Anthology of English " title="The Norton Anthology of English " height="114" width="80" itemprop="image" />
                                                 </a>
                                             </li>
                                                                                                                                                                                                                                                                         <li id="thumbnail_13">
                                                 <a 
                                                                                                             href="javascript:void(0);"
-                                                        rel="{gallery: 'gal1', smallimage: 'img/p/1/3/13-tm_large_default.jpg',largeimage: 'img/p/1/3/13-tm_thickbox_default.jpg'}"
+                                                        rel="{gallery: 'gal1', smallimage: '/static/products/img/p/1/3/13-tm_large_default.jpg',largeimage: '/static/products/img/p/1/3/13-tm_thickbox_default.jpg'}"
                                                                                                         title="The Norton Anthology of English ">
-                                                    <img class="img-responsive" id="thumb_13" src="img/p/1/3/13-tm_cart_default.jpg" alt="The Norton Anthology of English " title="The Norton Anthology of English " height="114" width="80" itemprop="image" />
+                                                    <img class="img-responsive" id="thumb_13" src="/static/products/img/p/1/3/13-tm_cart_default.jpg" alt="The Norton Anthology of English " title="The Norton Anthology of English " height="114" width="80" itemprop="image" />
                                                 </a>
                                             </li>
                                                                                                                                                                                                                                                                         <li id="thumbnail_14">
                                                 <a 
                                                                                                             href="javascript:void(0);"
-                                                        rel="{gallery: 'gal1', smallimage: 'img/p/1/4/14-tm_large_default.jpg',largeimage: 'img/p/1/4/14-tm_thickbox_default.jpg'}"
+                                                        rel="{gallery: 'gal1', smallimage: '/static/products/img/p/1/4/14-tm_large_default.jpg',largeimage: '/static/products/img/p/1/4/14-tm_thickbox_default.jpg'}"
                                                                                                         title="The Norton Anthology of English ">
-                                                    <img class="img-responsive" id="thumb_14" src="img/p/1/4/14-tm_cart_default.jpg" alt="The Norton Anthology of English " title="The Norton Anthology of English " height="114" width="80" itemprop="image" />
+                                                    <img class="img-responsive" id="thumb_14" src="/static/products/img/p/1/4/14-tm_cart_default.jpg" alt="The Norton Anthology of English " title="The Norton Anthology of English " height="114" width="80" itemprop="image" />
                                                 </a>
                                             </li>
                                                                                                                                                                                                                                                                         <li id="thumbnail_15">
                                                 <a 
                                                                                                             href="javascript:void(0);"
-                                                        rel="{gallery: 'gal1', smallimage: 'img/p/1/5/15-tm_large_default.jpg',largeimage: 'img/p/1/5/15-tm_thickbox_default.jpg'}"
+                                                        rel="{gallery: 'gal1', smallimage: '/static/products/img/p/1/5/15-tm_large_default.jpg',largeimage: '/static/products/img/p/1/5/15-tm_thickbox_default.jpg'}"
                                                                                                         title="The Norton Anthology of English ">
-                                                    <img class="img-responsive" id="thumb_15" src="img/p/1/5/15-tm_cart_default.jpg" alt="The Norton Anthology of English " title="The Norton Anthology of English " height="114" width="80" itemprop="image" />
+                                                    <img class="img-responsive" id="thumb_15" src="/static/products/img/p/1/5/15-tm_cart_default.jpg" alt="The Norton Anthology of English " title="The Norton Anthology of English " height="114" width="80" itemprop="image" />
                                                 </a>
                                             </li>
                                                                                                                                                                                                                                                                         <li id="thumbnail_16">
                                                 <a 
                                                                                                             href="javascript:void(0);"
-                                                        rel="{gallery: 'gal1', smallimage: 'img/p/1/6/16-tm_large_default.jpg',largeimage: 'img/p/1/6/16-tm_thickbox_default.jpg'}"
+                                                        rel="{gallery: 'gal1', smallimage: '/static/products/img/p/1/6/16-tm_large_default.jpg',largeimage: '/static/products/img/p/1/6/16-tm_thickbox_default.jpg'}"
                                                                                                         title="The Norton Anthology of English ">
-                                                    <img class="img-responsive" id="thumb_16" src="img/p/1/6/16-tm_cart_default.jpg" alt="The Norton Anthology of English " title="The Norton Anthology of English " height="114" width="80" itemprop="image" />
+                                                    <img class="img-responsive" id="thumb_16" src="/static/products/img/p/1/6/16-tm_cart_default.jpg" alt="The Norton Anthology of English " title="The Norton Anthology of English " height="114" width="80" itemprop="image" />
                                                 </a>
                                             </li>
                                                                                                                                                                                                                                                                         <li id="thumbnail_17" class="last">
                                                 <a 
                                                                                                             href="javascript:void(0);"
-                                                        rel="{gallery: 'gal1', smallimage: 'img/p/1/7/17-tm_large_default.jpg',largeimage: 'img/p/1/7/17-tm_thickbox_default.jpg'}"
+                                                        rel="{gallery: 'gal1', smallimage: '/static/products/img/p/1/7/17-tm_large_default.jpg',largeimage: '/static/products/img/p/1/7/17-tm_thickbox_default.jpg'}"
                                                                                                         title="The Norton Anthology of English ">
-                                                    <img class="img-responsive" id="thumb_17" src="img/p/1/7/17-tm_cart_default.jpg" alt="The Norton Anthology of English " title="The Norton Anthology of English " height="114" width="80" itemprop="image" />
+                                                    <img class="img-responsive" id="thumb_17" src="/static/products/img/p/1/7/17-tm_cart_default.jpg" alt="The Norton Anthology of English " title="The Norton Anthology of English " height="114" width="80" itemprop="image" />
                                                 </a>
                                             </li>
                                                                                                             </ul>
@@ -968,7 +927,7 @@ var wishlistProductsIds = false;
 			</h2>
 			<div class="row">
 									<div class="product clearfix  col-xs-12 col-sm-6">
-						<img src="img/p/9/9-medium_default.jpg" alt="The Norton Anthology of English " />
+						<img src="/static/products/img/p/9/9-medium_default.jpg" alt="The Norton Anthology of English " />
 						<div class="product_desc">
 							<p class="product_name">
 								<strong>The Norton Anthology of English </strong>
@@ -1030,133 +989,133 @@ var wishlistProductsIds = false;
         <div id="productscategory_list" class="clearfix">
             <ul id="bxslider1" class="bxslider clearfix">
                                      <li class="product-box item">
-                        <a href="" class="lnk_img product-image" title="Fifty Shades Trilogy"><img src="img/p/1/1-tm_home_default.jpg" alt="Fifty Shades Trilogy" /></a>
+                        <a href="" class="lnk_img product-image" title="Fifty Shades Trilogy"><img src="/static/products/img/p/1/1-tm_home_default.jpg" alt="Fifty Shades Trilogy" /></a>
                         
                         <h5 itemprop="name" class="product-name">
                             <a href="" title="Fifty Shades Trilogy">Fifty Shades Trilogy</a>
                         </h5>
                                             </li>
                                     <li class="product-box item">
-                        <a href="" class="lnk_img product-image" title="Amusing Ourselves to Death"><img src="img/p/1/8/18-tm_home_default.jpg" alt="Amusing Ourselves to Death" /></a>
+                        <a href="" class="lnk_img product-image" title="Amusing Ourselves to Death"><img src="/static/products/img/p/1/8/18-tm_home_default.jpg" alt="Amusing Ourselves to Death" /></a>
                         
                         <h5 itemprop="name" class="product-name">
                             <a href="" title="Amusing Ourselves to Death">Amusing Ourselves...</a>
                         </h5>
                                             </li>
                                     <li class="product-box item">
-                        <a href="" class="lnk_img product-image" title="An Army at Dawn"><img src="img/p/2/3/23-tm_home_default.jpg" alt="An Army at Dawn" /></a>
+                        <a href="" class="lnk_img product-image" title="An Army at Dawn"><img src="/static/products/img/p/2/3/23-tm_home_default.jpg" alt="An Army at Dawn" /></a>
                         
                         <h5 itemprop="name" class="product-name">
                             <a href="" title="An Army at Dawn">An Army at Dawn</a>
                         </h5>
                                             </li>
                                     <li class="product-box item">
-                        <a href="" class="lnk_img product-image" title="Catch-22  50th Anniversary Edition by Joseph Heller"><img src="img/p/2/8/28-tm_home_default.jpg" alt="Catch-22  50th Anniversary Edition by Joseph Heller" /></a>
+                        <a href="" class="lnk_img product-image" title="Catch-22  50th Anniversary Edition by Joseph Heller"><img src="/static/products/img/p/2/8/28-tm_home_default.jpg" alt="Catch-22  50th Anniversary Edition by Joseph Heller" /></a>
                         
                         <h5 itemprop="name" class="product-name">
                             <a href="" title="Catch-22  50th Anniversary Edition by Joseph Heller">Catch-22  50th...</a>
                         </h5>
                                             </li>
                                     <li class="product-box item">
-                        <a href="" class="lnk_img product-image" title="Elder Scrolls V - Skyrim Legendary Standard Edition"><img src="img/p/3/3/33-tm_home_default.jpg" alt="Elder Scrolls V - Skyrim Legendary Standard Edition" /></a>
+                        <a href="" class="lnk_img product-image" title="Elder Scrolls V - Skyrim Legendary Standard Edition"><img src="/static/products/img/p/3/3/33-tm_home_default.jpg" alt="Elder Scrolls V - Skyrim Legendary Standard Edition" /></a>
                         
                         <h5 itemprop="name" class="product-name">
                             <a href="" title="Elder Scrolls V - Skyrim Legendary Standard Edition">Elder Scrolls V -...</a>
                         </h5>
                                             </li>
                                     <li class="product-box item">
-                        <a href="" class="lnk_img product-image" title="Eleanor &amp; Park by Rainbow Rowell"><img src="img/p/3/8/38-tm_home_default.jpg" alt="Eleanor &amp; Park by Rainbow Rowell" /></a>
+                        <a href="" class="lnk_img product-image" title="Eleanor &amp; Park by Rainbow Rowell"><img src="/static/products/img/p/3/8/38-tm_home_default.jpg" alt="Eleanor &amp; Park by Rainbow Rowell" /></a>
                         
                         <h5 itemprop="name" class="product-name">
                             <a href="" title="Eleanor &amp; Park by Rainbow Rowell">Eleanor &amp; Park by...</a>
                         </h5>
                                             </li>
                                     <li class="product-box item">
-                        <a href="" class="lnk_img product-image" title="Fahrenheit 451- A Novel by Ray Bradbury"><img src="img/p/4/3/43-tm_home_default.jpg" alt="Fahrenheit 451- A Novel by Ray Bradbury" /></a>
+                        <a href="" class="lnk_img product-image" title="Fahrenheit 451- A Novel by Ray Bradbury"><img src="/static/products/img/p/4/3/43-tm_home_default.jpg" alt="Fahrenheit 451- A Novel by Ray Bradbury" /></a>
                         
                         <h5 itemprop="name" class="product-name">
                             <a href="" title="Fahrenheit 451- A Novel by Ray Bradbury">Fahrenheit 451- A...</a>
                         </h5>
                                             </li>
                                     <li class="product-box item">
-                        <a href="" class="lnk_img product-image" title="1984 (Signet Classics) by George Orwell"><img src="img/p/4/8/48-tm_home_default.jpg" alt="1984 (Signet Classics) by George Orwell" /></a>
+                        <a href="" class="lnk_img product-image" title="1984 (Signet Classics) by George Orwell"><img src="/static/products/img/p/4/8/48-tm_home_default.jpg" alt="1984 (Signet Classics) by George Orwell" /></a>
                         
                         <h5 itemprop="name" class="product-name">
                             <a href="" title="1984 (Signet Classics) by George Orwell">1984 (Signet...</a>
                         </h5>
                                             </li>
                                     <li class="product-box item">
-                        <a href="" class="lnk_img product-image" title="Gilead- A Novel by Marilynne Robinson"><img src="img/p/5/3/53-tm_home_default.jpg" alt="Gilead- A Novel by Marilynne Robinson" /></a>
+                        <a href="" class="lnk_img product-image" title="Gilead- A Novel by Marilynne Robinson"><img src="/static/products/img/p/5/3/53-tm_home_default.jpg" alt="Gilead- A Novel by Marilynne Robinson" /></a>
                         
                         <h5 itemprop="name" class="product-name">
                             <a href="" title="Gilead- A Novel by Marilynne Robinson">Gilead- A Novel...</a>
                         </h5>
                                             </li>
                                     <li class="product-box item">
-                        <a href="" class="lnk_img product-image" title="Growing Up Duggar - It's All About Relationships by Jana Duggar"><img src="img/p/5/8/58-tm_home_default.jpg" alt="Growing Up Duggar - It's All About Relationships by Jana Duggar" /></a>
+                        <a href="" class="lnk_img product-image" title="Growing Up Duggar - It's All About Relationships by Jana Duggar"><img src="/static/products/img/p/5/8/58-tm_home_default.jpg" alt="Growing Up Duggar - It's All About Relationships by Jana Duggar" /></a>
                         
                         <h5 itemprop="name" class="product-name">
                             <a href="" title="Growing Up Duggar - It's All About Relationships by Jana Duggar">Growing Up Duggar...</a>
                         </h5>
                                             </li>
                                     <li class="product-box item">
-                        <a href="" class="lnk_img product-image" title="Hardline (Hacker) by Meredith Wild"><img src="img/p/6/3/63-tm_home_default.jpg" alt="Hardline (Hacker) by Meredith Wild" /></a>
+                        <a href="" class="lnk_img product-image" title="Hardline (Hacker) by Meredith Wild"><img src="/static/products/img/p/6/3/63-tm_home_default.jpg" alt="Hardline (Hacker) by Meredith Wild" /></a>
                         
                         <h5 itemprop="name" class="product-name">
                             <a href="" title="Hardline (Hacker) by Meredith Wild">Hardline (Hacker)...</a>
                         </h5>
                                             </li>
                                     <li class="product-box item">
-                        <a href="" class="lnk_img product-image" title="Hardwired by Meredith Wild"><img src="img/p/6/8/68-tm_home_default.jpg" alt="Hardwired by Meredith Wild" /></a>
+                        <a href="" class="lnk_img product-image" title="Hardwired by Meredith Wild"><img src="/static/products/img/p/6/8/68-tm_home_default.jpg" alt="Hardwired by Meredith Wild" /></a>
                         
                         <h5 itemprop="name" class="product-name">
                             <a href="" title="Hardwired by Meredith Wild">Hardwired by...</a>
                         </h5>
                                             </li>
                                     <li class="product-box item">
-                        <a href="" class="lnk_img product-image" title="Heaven is for Real"><img src="img/p/7/3/73-tm_home_default.jpg" alt="Heaven is for Real" /></a>
+                        <a href="" class="lnk_img product-image" title="Heaven is for Real"><img src="/static/products/img/p/7/3/73-tm_home_default.jpg" alt="Heaven is for Real" /></a>
                         
                         <h5 itemprop="name" class="product-name">
                             <a href="" title="Heaven is for Real">Heaven is for Real</a>
                         </h5>
                                             </li>
                                     <li class="product-box item">
-                        <a href="" class="lnk_img product-image" title="Insurgent (Divergent) by Veronica Roth"><img src="img/p/7/8/78-tm_home_default.jpg" alt="Insurgent (Divergent) by Veronica Roth" /></a>
+                        <a href="" class="lnk_img product-image" title="Insurgent (Divergent) by Veronica Roth"><img src="/static/products/img/p/7/8/78-tm_home_default.jpg" alt="Insurgent (Divergent) by Veronica Roth" /></a>
                         
                         <h5 itemprop="name" class="product-name">
                             <a href="" title="Insurgent (Divergent) by Veronica Roth">Insurgent...</a>
                         </h5>
                                             </li>
                                     <li class="product-box item">
-                        <a href="" class="lnk_img product-image" title="Interpreter of Maladies by Jhumpa Lahiri"><img src="img/p/8/3/83-tm_home_default.jpg" alt="Interpreter of Maladies by Jhumpa Lahiri" /></a>
+                        <a href="" class="lnk_img product-image" title="Interpreter of Maladies by Jhumpa Lahiri"><img src="/static/products/img/p/8/3/83-tm_home_default.jpg" alt="Interpreter of Maladies by Jhumpa Lahiri" /></a>
                         
                         <h5 itemprop="name" class="product-name">
                             <a href="" title="Interpreter of Maladies by Jhumpa Lahiri">Interpreter of...</a>
                         </h5>
                                             </li>
                                     <li class="product-box item">
-                        <a href="" class="lnk_img product-image" title="Jesus- A Pilgrimage by James Martin"><img src="img/p/8/8/88-tm_home_default.jpg" alt="Jesus- A Pilgrimage by James Martin" /></a>
+                        <a href="" class="lnk_img product-image" title="Jesus- A Pilgrimage by James Martin"><img src="/static/products/img/p/8/8/88-tm_home_default.jpg" alt="Jesus- A Pilgrimage by James Martin" /></a>
                         
                         <h5 itemprop="name" class="product-name">
                             <a href="" title="Jesus- A Pilgrimage by James Martin">Jesus- A...</a>
                         </h5>
                                             </li>
                                     <li class="product-box item">
-                        <a href="" class="lnk_img product-image" title="Lord of the Flies by William Golding"><img src="img/p/9/3/93-tm_home_default.jpg" alt="Lord of the Flies by William Golding" /></a>
+                        <a href="" class="lnk_img product-image" title="Lord of the Flies by William Golding"><img src="/static/products/img/p/9/3/93-tm_home_default.jpg" alt="Lord of the Flies by William Golding" /></a>
                         
                         <h5 itemprop="name" class="product-name">
                             <a href="" title="Lord of the Flies by William Golding">Lord of the Flies...</a>
                         </h5>
                                             </li>
                                     <li class="product-box item">
-                        <a href="" class="lnk_img product-image" title="Lulu's Mysterious Mission by Judith Viorst"><img src="img/p/9/8/98-tm_home_default.jpg" alt="Lulu's Mysterious Mission by Judith Viorst" /></a>
+                        <a href="" class="lnk_img product-image" title="Lulu's Mysterious Mission by Judith Viorst"><img src="/static/products/img/p/9/8/98-tm_home_default.jpg" alt="Lulu's Mysterious Mission by Judith Viorst" /></a>
                         
                         <h5 itemprop="name" class="product-name">
                             <a href="" title="Lulu's Mysterious Mission by Judith Viorst">Lulu&#039;s Mysterious...</a>
                         </h5>
                                             </li>
                                     <li class="product-box item">
-                        <a href="" class="lnk_img product-image" title="Middlesex- A Novel (Oprah's Book Club) by Jeffrey Eugenides"><img src="img/p/1/0/3/103-tm_home_default.jpg" alt="Middlesex- A Novel (Oprah's Book Club) by Jeffrey Eugenides" /></a>
+                        <a href="" class="lnk_img product-image" title="Middlesex- A Novel (Oprah's Book Club) by Jeffrey Eugenides"><img src="/static/products/img/p/1/0/3/103-tm_home_default.jpg" alt="Middlesex- A Novel (Oprah's Book Club) by Jeffrey Eugenides" /></a>
                         
                         <h5 itemprop="name" class="product-name">
                             <a href="" title="Middlesex- A Novel (Oprah's Book Club) by Jeffrey Eugenides">Middlesex- A...</a>
@@ -1224,7 +1183,7 @@ var wishlistProductsIds = false;
 		<div class="bottom-footer">
 		<div class="container">
 			&copy; <span class="current-year">2018</span> <a class="_blank" title="prestashop" href="https://www.prestashop.com">Сделано в PrestaShop™</a>
-			<a class="footer-logo" href="https://www.templatemonster.com/" rel="nofollow"><img src="img/cms/footer-logo.png" alt="logo"></a>
+			<a class="footer-logo" href="https://www.templatemonster.com/" rel="nofollow"><img src="/static/products/img/cms/footer-logo.png" alt="logo"></a>
 		</div>		
 	</div>
 		<!-- /MODULE Block footer -->
@@ -1579,4 +1538,5 @@ var wishlistProductsIds = false;
 				</div></div><!-- #footer -->
 			            </div>
 		</div><!-- #page -->
-</body></html>
+</body>
+{% endblock %}

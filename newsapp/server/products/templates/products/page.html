@@ -1,13 +1,10 @@
-<!DOCTYPE HTML>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ru-ru"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8 ie7" lang="ru-ru"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="ru-ru"><![endif]-->
-<!--[if gt IE 8]> <html class="no-js ie9" lang="ru-ru"><![endif]-->
-<html lang="ru-ru">
-	<head>
-		<meta charset="utf-8" />
-		<title>Classic - Book Hangover</title>
-		<meta name="description" content="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring." />
+{% extends 'master.html' %}
+
+{% block page_title %}Classic - Book Hangover{% endblock %}
+
+{% block page_description %}Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.{% endblock %}
+
+{% block page_static %}
 		<meta name="generator" content="PrestaShop" />
 		<meta name="robots" content="index,follow" />
 		<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.0, initial-scale=1.0" /> 
@@ -162,7 +159,9 @@ var wishlistProductsIds = false;
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 		<![endif]-->
-	</head>
+{% endblock %}
+	
+{% block page_content %}
 	<body id="category" class="category category-43 category-classic hide-right-column lang_ru  two-columns">
 	    <!--[if IE 8]>
         <div style='clear:both;height:59px;padding:0 15px 0 15px;position:relative;z-index:10000;text-align:center;'><a href="//www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="https://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div>
@@ -627,10 +626,10 @@ var wishlistProductsIds = false;
 												<div class="productInner">
 													<div class="left-block">
 														<div class="product-image-container">
-															<a class="product_img_link"	href="" title="{{ itm.name }}" itemprop="url">
+															<a class="product_img_link"	href="{% url 'detail' itm.id %}" title="{{ itm.name }}" itemprop="url">
 																<img class="replace-2x img-responsive" src="/media/{{ itm.image }}" alt="{{ itm.name }}" title="{{ itm.name }}" itemprop="image" />
 															</a>
-															<a class="quick-view" href="" rel="">
+															<a class="quick-view" href="{% url 'detail' itm.id %}" rel="{% url 'detail' itm.id %}">
 																<span>Быстрый просмотр</span>
 															</a>
 															<a class="sale-box" href="">
@@ -643,7 +642,7 @@ var wishlistProductsIds = false;
 													</div>
 													<div class="right-block">
 														<h5 itemprop="name">
-															<a class="product-name" href="" title="{{ itm.name }}" itemprop="url" >
+															<a class="product-name" href="{% url 'detail' itm.id %}" title="{{ itm.name }}" itemprop="url" >
 																<span class="list-name">{{ itm.name }}</span>
 																<span class="grid-name">{{ itm.name }}</span>
 															</a>
@@ -697,7 +696,7 @@ var wishlistProductsIds = false;
 																<a class="add_to_compare" href="" data-id-product="2" title="Добавить к сравнению"><span>Добавить к сравнению</span></a>
 															</div>
 															<div class="moreBox ">
-																<a itemprop="url" href="" title="См.">
+																<a itemprop="url" href="{% url 'detail' itm.id %}" title="См.">
 																	<span>Еще</span>
 																</a>
 															</div>
@@ -1405,4 +1404,4 @@ var wishlistProductsIds = false;
 			</div>
 		</div><!-- #page -->
 	</body>
-</html>
+{% endblock %}
