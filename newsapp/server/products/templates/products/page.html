@@ -4,17 +4,7 @@
 
 {% block page_description %}Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.{% endblock %}
 
-{% block page_static %}
-		<meta name="generator" content="PrestaShop" />
-		<meta name="robots" content="index,follow" />
-		<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.0, initial-scale=1.0" /> 
-		<meta name="apple-mobile-web-app-capable" content="yes" /> 
-		<link rel="icon" type="image/vnd.microsoft.icon" href="/static/products/img/favicon.ico?1463616247" />
-		<link rel="shortcut icon" type="image/x-icon" href="/static/products/img/favicon.ico?1463616247" />
-			<link rel="stylesheet" href="/static/products/css/global.css" media="all" />
-			<link rel="stylesheet" href="/static/products/css/autoload/highdpi.css" media="all" />
-			<link rel="stylesheet" href="/static/products/css/autoload/responsive-tables.css" media="all" />
-			<link rel="stylesheet" href="/static/products/css/autoload/uniform.default.css" media="all" />
+{% block page_css %}			
 			<link rel="stylesheet" href="/static/products/js/fancybox/jquery.fancybox.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/product_list.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/category.css" media="all" />
@@ -30,8 +20,6 @@
 			<link rel="stylesheet" href="/static/products/js/autocomplete/jquery.autocomplete.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/modules/blocktags/blocktags.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/modules/blockviewed/blockviewed.css" media="all" />
-			<link rel="stylesheet" href="/static/products/css/modules/themeconfigurator/css/hooks.css" media="all" />
-			<link rel="stylesheet" href="/static/products/css/modules/themeconfigurator/css/live_configurator.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/modules/blockwishlist/blockwishlist.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/modules/productcomments/productcomments.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/modules/blockpermanentlinks/blockpermanentlinks.css" media="all" />
@@ -46,84 +34,82 @@
 			<link rel="stylesheet" href="/static/products/css/modules/tmmegamenu/views/css/front.css" media="all" />
 			<link rel="stylesheet" href="/static/products/modules/tmsociallogin/views/css/front.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/modules/tmsearch/views/css/tmsearch.css" media="all" />
-		<script type="text/javascript">
-var CUSTOMIZE_TEXTFIELD = 1;
-var FancyboxI18nClose = 'Закрыть';
-var FancyboxI18nNext = 'Вперед';
-var FancyboxI18nPrev = 'Назад';
-var added_to_wishlist = 'Добавлено в избранное.';
-var ajax_allowed = true;
-var ajaxsearch = true;
-var baseDir = '/';
-var baseUri = '/';
-var comparator_max_item = 2;
-var comparedProductsIds = [];
-var contentOnly = false;
-var customizationIdMessage = 'Модификация №';
-var delete_txt = 'Удалить';
-var displayList = false;
-var freeProductTranslation = 'Бесплатно!';
-var freeShippingTranslation = 'Бесплатная доставка!';
-var generated_date = 1532186979;
-var hasDeliveryAddress = false;
-var id_lang = 3;
-var img_dir = '/img/';
-var instantsearch = true;
-var isGuest = 0;
-var isLogged = 0;
-var isMobile = false;
-var loggin_required = 'Вы должны авторизироваться для управления избранным.';
-var max_item = 'Нельзя добавить больше чем 2 товаров для сравнения';
-var min_item = 'Выберите по крайней мере один товар';
-var module_url = '';
-var mywishlist_url = '';
-var nbItemsPerLine = 3;
-var nbItemsPerLineMobile = 2;
-var nbItemsPerLineTablet = 2;
-var page_name = 'category';
-var placeholder_blocknewsletter = 'Введите ваш e-mail';
-var popup_status = true;
-var priceDisplayMethod = 1;
-var priceDisplayPrecision = 2;
-var quickView = true;
-var removingLinkText = 'удалить товар из корзины';
-var request = '';
-var roundMode = 2;
-var scroll_step = 150;
-var scrool_speed = 800;
-var search_url = '';
-var search_url_local = '';
-var static_token = '';
-var text_close = 'Закрыть';
-var text_description = 'Введите ваш адрес электронной почты, чтобы получать все новости, обновления о новых поступлениях, специальных предложениях и другую информацию о скидках.';
-var text_email = 'Ваш адрес электронной почты';
-var text_heading = 'Подпишитесь на нашу рассылку';
-var text_heading_1 = 'Подпишитесь на нашу рассылку';
-var text_heading_2 = 'Вы успешно подписались на рассылку';
-var text_heading_3 = 'Ошибка';
-var text_placeholder = 'Enter your e-mail';
-var text_remove = 'Больше не показывать';
-var text_sign = 'Подписаться';
-var tmsearch_description = false;
-var tmsearch_height = 600;
-var tmsearch_image = true;
-var tmsearch_limit = true;
-var tmsearch_limit_num = 3;
-var tmsearch_manufacturer = false;
-var tmsearch_price = true;
-var tmsearch_reference = true;
-var tmsearch_scroll = true;
-var toBeDetermined = 'Определить';
-var token = '';
-var user_newsletter_status = 0;
-var usingSecureMode = true;
-var wishlistProductsIds = false;
-</script>			
-			<script type="text/javascript" src="/static/products/js/jquery-1.11.0.min.js"></script>
-			<script type="text/javascript" src="/static/products/js/jquery-migrate-1.2.1.min.js"></script>
-			<script type="text/javascript" src="/static/products/js/jquery.easing.js"></script>
-			<script type="text/javascript" src="/static/products/js/tools.js"></script>
-			<script type="text/javascript" src="/static/products/js/global.js"></script>
+{% endblock %}			
+			
+{% block page_js %}
+			<script type="text/javascript">
+				var CUSTOMIZE_TEXTFIELD = 1;
+				var FancyboxI18nClose = 'Закрыть';
+				var FancyboxI18nNext = 'Вперед';
+				var FancyboxI18nPrev = 'Назад';
+				var added_to_wishlist = 'Добавлено в избранное.';
+				var ajax_allowed = true;
+				var ajaxsearch = true;
+				var baseDir = '/';
+				var baseUri = '/';
+				var comparator_max_item = 2;
+				var comparedProductsIds = [];
+				var contentOnly = false;
+				var customizationIdMessage = 'Модификация №';
+				var delete_txt = 'Удалить';
+				var displayList = false;
+				var freeProductTranslation = 'Бесплатно!';
+				var freeShippingTranslation = 'Бесплатная доставка!';
+				var generated_date = 1532186979;
+				var hasDeliveryAddress = false;
+				var id_lang = 3;
+				var img_dir = '/img/';
+				var instantsearch = true;
+				var isGuest = 0;
+				var isLogged = 0;
+				var isMobile = false;
+				var loggin_required = 'Вы должны авторизироваться для управления избранным.';
+				var max_item = 'Нельзя добавить больше чем 2 товаров для сравнения';
+				var min_item = 'Выберите по крайней мере один товар';
+				var module_url = '';
+				var mywishlist_url = '';
+				var nbItemsPerLine = 3;
+				var nbItemsPerLineMobile = 2;
+				var nbItemsPerLineTablet = 2;
+				var page_name = 'category';
+				var placeholder_blocknewsletter = 'Введите ваш e-mail';
+				var popup_status = true;
+				var priceDisplayMethod = 1;
+				var priceDisplayPrecision = 2;
+				var quickView = true;
+				var removingLinkText = 'удалить товар из корзины';
+				var request = '';
+				var roundMode = 2;
+				var scroll_step = 150;
+				var scrool_speed = 800;
+				var search_url = '';
+				var search_url_local = '';
+				var static_token = '';
+				var text_close = 'Закрыть';
+				var text_description = 'Введите ваш адрес электронной почты, чтобы получать все новости, обновления о новых поступлениях, специальных предложениях и другую информацию о скидках.';
+				var text_email = 'Ваш адрес электронной почты';
+				var text_heading = 'Подпишитесь на нашу рассылку';
+				var text_heading_1 = 'Подпишитесь на нашу рассылку';
+				var text_heading_2 = 'Вы успешно подписались на рассылку';
+				var text_heading_3 = 'Ошибка';
+				var text_placeholder = 'Enter your e-mail';
+				var text_remove = 'Больше не показывать';
+				var text_sign = 'Подписаться';
+				var tmsearch_description = false;
+				var tmsearch_height = 600;
+				var tmsearch_image = true;
+				var tmsearch_limit = true;
+				var tmsearch_limit_num = 3;
+				var tmsearch_manufacturer = false;
+				var tmsearch_price = true;
+				var tmsearch_reference = true;
+				var tmsearch_scroll = true;
+				var toBeDetermined = 'Определить';
+				var token = '';
+				var user_newsletter_status = 0;
+				var usingSecureMode = true;
+				var wishlistProductsIds = false;
+			</script>
 			<script type="text/javascript" src="/static/products/js/autoload/10-bootstrap.min.js"></script>
 			<script type="text/javascript" src="/static/products/js/autoload/14-device.min.js"></script>
 			<script type="text/javascript" src="/static/products/js/autoload/15-jquery.total-storage.min.js"></script>
@@ -153,16 +139,10 @@ var wishlistProductsIds = false;
 			<script type="text/javascript" src="/static/products/modules/tmmegamenu/views/js/superfish.js"></script>
 			<script type="text/javascript" src="/static/products/js/modules/tmmegamenu/views/js/front.js"></script>
 			<script type="text/javascript" src="/static/products/modules/tmsearch/views/js/tmsearch.js"></script>
-
-        <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic' rel='stylesheet' type='text/css'>
-		<!--[if IE 8]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-		<![endif]-->
 {% endblock %}
 	
 {% block page_content %}
-	<body id="category" class="category category-43 category-classic hide-right-column lang_ru  two-columns">
+	<body id="category" class="category category-43 category-classic hide-right-column lang_ru two-columns">
 	    <!--[if IE 8]>
         <div style='clear:both;height:59px;padding:0 15px 0 15px;position:relative;z-index:10000;text-align:center;'><a href="//www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="https://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div>
 		<![endif]-->

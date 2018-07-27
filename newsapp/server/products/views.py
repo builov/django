@@ -18,4 +18,4 @@ def product_detail(request, pk):
 
 	instance = get_object_or_404(models.Product, id=pk)
 	
-	return render(request, 'products/card.html', {'instance':instance})
+	return render(request, 'products/card.html', {'instance': instance})

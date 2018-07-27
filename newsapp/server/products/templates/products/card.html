@@ -1,20 +1,10 @@
 {% extends 'master.html' %}
 
-{% block page_title %}The Norton Anthology of English  - Book Hangover{% endblock %}
+{% block page_title %}{{ instance.name }}{% endblock %}
 
 {% block page_description %}Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.{% endblock %}
 
-{% block page_static %}
-		<meta name="generator" content="PrestaShop" />
-		<meta name="robots" content="index,follow" />
-		<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.0, initial-scale=1.0" /> 
-		<meta name="apple-mobile-web-app-capable" content="yes" /> 
-		<link rel="icon" type="image/vnd.microsoft.icon" href="/static/products/img/favicon.ico?1463616247" />
-		<link rel="shortcut icon" type="image/x-icon" href="/static/products/img/favicon.ico?1463616247" />
-			<link rel="stylesheet" href="/static/products/css/global.css" media="all" />
-			<link rel="stylesheet" href="/static/products/css/autoload/highdpi.css" media="all" />
-			<link rel="stylesheet" href="/static/products/css/autoload/responsive-tables.css" media="all" />
-			<link rel="stylesheet" href="/static/products/css/autoload/uniform.default.css" media="all" />
+{% block page_css %}
 			<link rel="stylesheet" href="/static/products/js/fancybox/jquery.fancybox.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/product_list.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/category.css" media="all" />
@@ -30,8 +20,6 @@
 			<link rel="stylesheet" href="/static/products/js/autocomplete/jquery.autocomplete.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/modules/blocktags/blocktags.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/modules/blockviewed/blockviewed.css" media="all" />
-			<link rel="stylesheet" href="/static/products/css/modules/themeconfigurator/css/hooks.css" media="all" />
-			<link rel="stylesheet" href="/static/products/css/modules/themeconfigurator/css/live_configurator.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/modules/blockwishlist/blockwishlist.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/modules/productcomments/productcomments.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/modules/blockpermanentlinks/blockpermanentlinks.css" media="all" />
@@ -52,143 +40,140 @@
 			<link rel="stylesheet" href="/static/products/js/jquery.jqzoom.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/modules/socialsharing/css/socialsharing.css" media="all" />			
 			<link rel="stylesheet" href="/static/products/css/sendtoafriend.css" media="all" />
-			
-		<script type="text/javascript">
-var CUSTOMIZE_TEXTFIELD = 1;
-var FancyboxI18nClose = 'Закрыть';
-var FancyboxI18nNext = 'Вперед';
-var FancyboxI18nPrev = 'Назад';
-var PS_CATALOG_MODE = false;
-var added_to_wishlist = 'Добавлено в избранное.';
-var ajax_allowed = true;
-var ajaxsearch = true;
-var allowBuyWhenOutOfStock = false;
-var attribute_anchor_separator = '-';
-var attributesCombinations = [];
-var availableLaterValue = '';
-var availableNowValue = '';
-var baseDir = '/';
-var baseUri = '/';
-var confirm_report_message = 'Вы точно хотите пожаловаться на этот комментарий?';
-var contentOnly = false;
-var currencyBlank = 0;
-var currencyFormat = 1;
-var currencyRate = 1;
-var currencySign = '$';
-var currentDate = '2018-07-22 05:14:54';
-var customerGroupWithoutTax = true;
-var customizationFields = false;
-var customizationIdMessage = 'Модификация №';
-var default_eco_tax = 0;
-var delete_txt = 'Удалить';
-var displayList = false;
-var displayPrice = 1;
-var doesntExist = 'Данная модификация отсутствует. Пожалуйста, выберите другую.';
-var doesntExistNoMore = 'Нет в наличии товара';
-var doesntExistNoMoreBut = 'с такими свойствами. Выберите товар с другими свойствами.';
-var ecotaxTax_rate = 0;
-var fieldRequired = 'Пожалуйста заполните все требуемые поля, затем сохраните модификацию.';
-var freeProductTranslation = 'Бесплатно!';
-var freeShippingTranslation = 'Бесплатная доставка!';
-var generated_date = 1532250894;
-var group_reduction = 0;
-var hasDeliveryAddress = false;
-var idDefaultImage = 9;
-var id_lang = 3;
-var id_product = 2;
-var img_dir = '/static/products/img/';
-var img_prod_dir = '/static/products/img/p/';
-var img_ps_dir = '/static/products/img/';
-var instantsearch = true;
-var isGuest = 0;
-var isLogged = 0;
-var isMobile = false;
-var jqZoomEnabled = true;
-var loggin_required = 'Вы должны авторизироваться для управления избранным.';
-var maxQuantityToAllowDisplayOfLastQuantityMessage = 3;
-var minimalQuantity = 1;
-var moderation_active = true;
-var module_url = '';
-var mywishlist_url = '';
-var noTaxForThisProduct = true;
-var oosHookJsCodeFunctions = [];
-var page_name = 'product';
-var placeholder_blocknewsletter = 'Введите ваш e-mail';
-var popup_status = false;
-var priceDisplayMethod = 1;
-var priceDisplayPrecision = 2;
-var productAvailableForOrder = true;
-var productBasePriceTaxExcl = 80.25;
-var productBasePriceTaxExcluded = 80.25;
-var productColumns = '1';
-var productHasAttributes = false;
-var productPrice = 69.82;
-var productPriceTaxExcluded = 80.25;
-var productPriceWithoutReduction = 80.25;
-var productReference = '';
-var productShowPrice = true;
-var productUnitPriceRatio = 0;
-var product_fileButtonHtml = 'Выберите файл';
-var product_fileDefaultHtml = 'Файлы не выбраны';
-var product_specific_price = {"id_specific_price":"2","id_specific_price_rule":"0","id_cart":"0","id_product":"2","id_shop":"1","id_shop_group":"0","id_currency":"0","id_country":"0","id_group":"0","id_customer":"0","id_product_attribute":"0","price":"-1.000000","from_quantity":"1","reduction":"0.130000","reduction_tax":"1","reduction_type":"percentage","from":"0000-00-00 00:00:00","to":"0000-00-00 00:00:00","score":"48"};
-var productcomment_added = 'Ваш комментарий добавлен!';
-var productcomment_added_moderation = 'Ваш комментарий добавлен и будет опубликован после одобрения модератором.';
-var productcomment_ok = 'ОК';
-var productcomment_title = 'Новый комментарий';
-var productcomments_controller_url = '';
-var productcomments_url_rewrite = false;
-var quantitiesDisplayAllowed = true;
-var quantityAvailable = 76;
-var quickView = true;
-var reduction_percent = 13;
-var reduction_price = 0;
-var removingLinkText = 'удалить товар из корзины';
-var roundMode = 2;
-var scroll_step = 150;
-var scrool_speed = 800;
-var search_url = '';
-var search_url_local = '';
-var secure_key = '';
-var sharing_img = '/static/products/img/p/9/9.jpg';
-var sharing_name = 'The Norton Anthology of English ';
-var sharing_url = '';
-var specific_currency = false;
-var specific_price = -1;
-var static_token = '';
-var stock_management = 1;
-var taxRate = 0;
-var text_close = 'Закрыть';
-var text_description = 'Введите ваш адрес электронной почты, чтобы получать все новости, обновления о новых поступлениях, специальных предложениях и другую информацию о скидках.';
-var text_email = 'Ваш адрес электронной почты';
-var text_heading = 'Подпишитесь на нашу рассылку';
-var text_heading_1 = 'Подпишитесь на нашу рассылку';
-var text_heading_2 = 'Вы успешно подписались на рассылку';
-var text_heading_3 = 'Ошибка';
-var text_placeholder = 'Enter your e-mail';
-var text_remove = 'Больше не показывать';
-var text_sign = 'Подписаться';
-var tmsearch_description = false;
-var tmsearch_height = 600;
-var tmsearch_image = true;
-var tmsearch_limit = true;
-var tmsearch_limit_num = 3;
-var tmsearch_manufacturer = false;
-var tmsearch_price = true;
-var tmsearch_reference = true;
-var tmsearch_scroll = true;
-var toBeDetermined = 'Определить';
-var token = '';
-var uploading_in_progress = 'Пожалуйста подождите...';
-var user_newsletter_status = 0;
-var usingSecureMode = true;
-var wishlistProductsIds = false;
+{% endblock %}
 
-</script>			
-			<script type="text/javascript" src="/static/products/js/jquery-1.11.0.min.js"></script>
-			<script type="text/javascript" src="/static/products/js/jquery-migrate-1.2.1.min.js"></script>
-			<script type="text/javascript" src="/static/products/js/jquery.easing.js"></script>
-			<script type="text/javascript" src="/static/products/js/tools.js"></script>
-			<script type="text/javascript" src="/static/products/js/global.js"></script>
+{% block page_js %}		
+			<script type="text/javascript">
+				var CUSTOMIZE_TEXTFIELD = 1;
+				var FancyboxI18nClose = 'Закрыть';
+				var FancyboxI18nNext = 'Вперед';
+				var FancyboxI18nPrev = 'Назад';
+				var PS_CATALOG_MODE = false;
+				var added_to_wishlist = 'Добавлено в избранное.';
+				var ajax_allowed = true;
+				var ajaxsearch = true;
+				var allowBuyWhenOutOfStock = false;
+				var attribute_anchor_separator = '-';
+				var attributesCombinations = [];
+				var availableLaterValue = '';
+				var availableNowValue = '';
+				var baseDir = '/';
+				var baseUri = '/';
+				var confirm_report_message = 'Вы точно хотите пожаловаться на этот комментарий?';
+				var contentOnly = false;
+				var currencyBlank = 0;
+				var currencyFormat = 1;
+				var currencyRate = 1;
+				var currencySign = '$';
+				var currentDate = '2018-07-22 05:14:54';
+				var customerGroupWithoutTax = true;
+				var customizationFields = false;
+				var customizationIdMessage = 'Модификация №';
+				var default_eco_tax = 0;
+				var delete_txt = 'Удалить';
+				var displayList = false;
+				var displayPrice = 1;
+				var doesntExist = 'Данная модификация отсутствует. Пожалуйста, выберите другую.';
+				var doesntExistNoMore = 'Нет в наличии товара';
+				var doesntExistNoMoreBut = 'с такими свойствами. Выберите товар с другими свойствами.';
+				var ecotaxTax_rate = 0;
+				var fieldRequired = 'Пожалуйста заполните все требуемые поля, затем сохраните модификацию.';
+				var freeProductTranslation = 'Бесплатно!';
+				var freeShippingTranslation = 'Бесплатная доставка!';
+				var generated_date = 1532250894;
+				var group_reduction = 0;
+				var hasDeliveryAddress = false;
+				var idDefaultImage = 9;
+				var id_lang = 3;
+				var id_product = 2;
+				var img_dir = '/static/products/img/';
+				var img_prod_dir = '/static/products/img/p/';
+				var img_ps_dir = '/static/products/img/';
+				var instantsearch = true;
+				var isGuest = 0;
+				var isLogged = 0;
+				var isMobile = false;
+				var jqZoomEnabled = true;
+				var loggin_required = 'Вы должны авторизироваться для управления избранным.';
+				var maxQuantityToAllowDisplayOfLastQuantityMessage = 3;
+				var minimalQuantity = 1;
+				var moderation_active = true;
+				var module_url = '';
+				var mywishlist_url = '';
+				var noTaxForThisProduct = true;
+				var oosHookJsCodeFunctions = [];
+				var page_name = 'product';
+				var placeholder_blocknewsletter = 'Введите ваш e-mail';
+				var popup_status = false;
+				var priceDisplayMethod = 1;
+				var priceDisplayPrecision = 2;
+				var productAvailableForOrder = true;
+				var productBasePriceTaxExcl = 80.25;
+				var productBasePriceTaxExcluded = 80.25;
+				var productColumns = '1';
+				var productHasAttributes = false;
+				var productPrice = 69.82;
+				var productPriceTaxExcluded = 80.25;
+				var productPriceWithoutReduction = 80.25;
+				var productReference = '';
+				var productShowPrice = true;
+				var productUnitPriceRatio = 0;
+				var product_fileButtonHtml = 'Выберите файл';
+				var product_fileDefaultHtml = 'Файлы не выбраны';
+				var product_specific_price = {"id_specific_price":"2","id_specific_price_rule":"0","id_cart":"0","id_product":"2","id_shop":"1","id_shop_group":"0","id_currency":"0","id_country":"0","id_group":"0","id_customer":"0","id_product_attribute":"0","price":"-1.000000","from_quantity":"1","reduction":"0.130000","reduction_tax":"1","reduction_type":"percentage","from":"0000-00-00 00:00:00","to":"0000-00-00 00:00:00","score":"48"};
+				var productcomment_added = 'Ваш комментарий добавлен!';
+				var productcomment_added_moderation = 'Ваш комментарий добавлен и будет опубликован после одобрения модератором.';
+				var productcomment_ok = 'ОК';
+				var productcomment_title = 'Новый комментарий';
+				var productcomments_controller_url = '';
+				var productcomments_url_rewrite = false;
+				var quantitiesDisplayAllowed = true;
+				var quantityAvailable = 76;
+				var quickView = true;
+				var reduction_percent = 13;
+				var reduction_price = 0;
+				var removingLinkText = 'удалить товар из корзины';
+				var roundMode = 2;
+				var scroll_step = 150;
+				var scrool_speed = 800;
+				var search_url = '';
+				var search_url_local = '';
+				var secure_key = '';
+				var sharing_img = '/static/products/img/p/9/9.jpg';
+				var sharing_name = 'The Norton Anthology of English ';
+				var sharing_url = '';
+				var specific_currency = false;
+				var specific_price = -1;
+				var static_token = '';
+				var stock_management = 1;
+				var taxRate = 0;
+				var text_close = 'Закрыть';
+				var text_description = 'Введите ваш адрес электронной почты, чтобы получать все новости, обновления о новых поступлениях, специальных предложениях и другую информацию о скидках.';
+				var text_email = 'Ваш адрес электронной почты';
+				var text_heading = 'Подпишитесь на нашу рассылку';
+				var text_heading_1 = 'Подпишитесь на нашу рассылку';
+				var text_heading_2 = 'Вы успешно подписались на рассылку';
+				var text_heading_3 = 'Ошибка';
+				var text_placeholder = 'Enter your e-mail';
+				var text_remove = 'Больше не показывать';
+				var text_sign = 'Подписаться';
+				var tmsearch_description = false;
+				var tmsearch_height = 600;
+				var tmsearch_image = true;
+				var tmsearch_limit = true;
+				var tmsearch_limit_num = 3;
+				var tmsearch_manufacturer = false;
+				var tmsearch_price = true;
+				var tmsearch_reference = true;
+				var tmsearch_scroll = true;
+				var toBeDetermined = 'Определить';
+				var token = '';
+				var uploading_in_progress = 'Пожалуйста подождите...';
+				var user_newsletter_status = 0;
+				var usingSecureMode = true;
+				var wishlistProductsIds = false;
+
+			</script>			
 			<script type="text/javascript" src="/static/products/js/autoload/10-bootstrap.min.js"></script>
 			<script type="text/javascript" src="/static/products/js/autoload/14-device.min.js"></script>
 			<script type="text/javascript" src="/static/products/js/autoload/15-jquery.total-storage.min.js"></script>
@@ -242,13 +227,7 @@ var wishlistProductsIds = false;
 			<meta property="og:locality" content="" />
 			<meta property="og:country-name" content="" />
 			<meta property="og:postal-code" content="" />
-			<meta property="og:image" content="/static/products/img/p/9/9-large_default.jpg" />			
-
-        <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic' rel='stylesheet' type='text/css'>
-		<!--[if IE 8]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-		<![endif]-->
+			<meta property="og:image" content="/static/products/img/p/9/9-large_default.jpg" />	
 {% endblock %}
 	
 {% block page_content %}
@@ -276,62 +255,61 @@ var wishlistProductsIds = false;
 				</header>
 			</div>
             <div class="columns-footer-inner">
-			<div class="columns-container">
-                <div id="top_column"></div>
+				<div class="columns-container">
+					<div id="top_column"></div>
                                     <!-- Breadcrumb -->
 
-<div class="breadcrumb clearfix"><div class="container">
-	<a class="home" href="/" title="На главную">
-    	<i class="fa fa-home"></i>
-    </a>
-			<span class="navigation-pipe">&gt;</span>
-					The Norton Anthology of English 
-			</div></div>
-
-<!-- /Breadcrumb -->
-                				<div id="columns" class="container">
-					<div class="row">
-                    	<div class="large-left col-sm-12">
-                        	<div class="row">
-                            	<div id="center_column" class="center_column col-xs-12 col-sm-12">
+					<div class="breadcrumb clearfix">
+						<div class="container">
+							<a class="home" href="/" title="На главную">
+								<i class="fa fa-home"></i>
+							</a>
+							<span class="navigation-pipe">&gt;</span>
+										{{ instance.name }} 
+						</div>
+					</div>
+					<!-- /Breadcrumb -->
+					
+                	<div id="columns" class="container">
+						<div class="row">
+							<div class="large-left col-sm-12">
+								<div class="row">
+									<div id="center_column" class="center_column col-xs-12 col-sm-12">
 	
 	<!--Replaced theme 2 -->
 
 
 	
-							<div itemscope itemtype="https://schema.org/Product">
-	<div class="primary_block row one-column">	
+										<div itemscope itemtype="https://schema.org/Product">
+											<div class="primary_block row one-column">	
         		
                         <!-- left infos-->  
-                <div class="pb-left-column col-sm-6 col-md-6 col-lg-8">
-                    <!-- product img-->        
-                    <div id="image-block" class="clearfix is_caroucel">
-                                                                            <span class="sale-box no-print">
-                                <span class="sale-label">Распродажа!</span>
-                            </span>
-                                                                            <span id="view_full_size">
-                                                                    <a class="jqzoom" title="The Norton Anthology of English " rel="gal1" href="/static/products/img/p/9/9-tm_thickbox_default.jpg" itemprop="url">
-                                        <img itemprop="image" src="/static/products/img/p/9/9-tm_large_default.jpg" title="The Norton Anthology of English " alt="The Norton Anthology of English "/>
-                                    </a>
-                                                            </span>
-                                            </div> <!-- end image-block -->
+												<div class="pb-left-column col-sm-6 col-md-6 col-lg-8">
+													<!-- product img-->        
+													<div id="image-block" class="clearfix is_caroucel">
+                                                        <span class="sale-box no-print">
+															<span class="sale-label">Распродажа!</span>
+														</span>
+                                                        <span id="view_full_size">
+                                                            <a class="jqzoom" title="{{ instance.name }}" rel="gal1" href="/media/{{ instance.image }}" itemprop="url">
+																<img itemprop="image" src="/media/{{ instance.image }}" title="{{ instance.name }}" alt="{{ instance.name }}"/>
+															</a>
+                                                        </span>
+													</div> <!-- end image-block -->
                     
                                             <!-- thumbnails -->
-                        <div id="views_block" class="clearfix">
-                                                            <a id="view_scroll_left" class="" title="Другие виды" href="javascript:{}">
-                                    Назад
-                                </a>
+													<div id="views_block" class="clearfix">
+                                                        <a id="view_scroll_left" class="" title="Другие виды" href="javascript:{}">
+															Назад
+														</a>
                                                         <div id="thumbs_list">
-                                <ul id="thumbs_list_frame">
-                                                                                                                                                                                                                                                                                                            <li id="thumbnail_9">
-                                                <a 
-                                                                                                            href="javascript:void(0);"
-                                                        rel="{gallery: 'gal1', smallimage: '/static/products/img/p/9/9-tm_large_default.jpg',largeimage: '/static/products/img/p/9/9-tm_thickbox_default.jpg'}"
-                                                                                                        title="The Norton Anthology of English ">
-                                                    <img class="img-responsive" id="thumb_9" src="/static/products/img/p/9/9-tm_cart_default.jpg" alt="The Norton Anthology of English " title="The Norton Anthology of English " height="114" width="80" itemprop="image" />
-                                                </a>
-                                            </li>
-                                                                                                                                                                                                                                                                        <li id="thumbnail_10">
+															<ul id="thumbs_list_frame">
+																<li id="thumbnail_9">
+																	<a href="javascript:void(0);" rel="{gallery: 'gal1', smallimage: '/static/products/img/p/9/9-tm_large_default.jpg',largeimage: '/static/products/img/p/9/9-tm_thickbox_default.jpg'}" title="{{ instance.name }}">
+																		<img class="img-responsive" id="thumb_9" src="/static/products/img/p/9/9-tm_cart_default.jpg" alt="{{ instance.name }}" title="{{ instance.name }}" height="114" width="80" itemprop="image" />
+																	</a>
+																</li>
+                                                                                                                                                                                                                                   <li id="thumbnail_10">
                                                 <a 
                                                                                                             href="javascript:void(0);"
                                                         rel="{gallery: 'gal1', smallimage: '/static/products/img/p/1/0/10-tm_large_default.jpg',largeimage: '/static/products/img/p/1/0/10-tm_thickbox_default.jpg'}"
@@ -395,200 +373,206 @@ var wishlistProductsIds = false;
                                                     <img class="img-responsive" id="thumb_17" src="/static/products/img/p/1/7/17-tm_cart_default.jpg" alt="The Norton Anthology of English " title="The Norton Anthology of English " height="114" width="80" itemprop="image" />
                                                 </a>
                                             </li>
-                                                                                                            </ul>
-                            </div> <!-- end thumbs_list -->
-                                                            <a id="view_scroll_right" title="Другие виды" href="javascript:{}">
-                                    Вперед
-                                </a>
+                                                            </ul>
+														</div> <!-- end thumbs_list -->
+                                                        <a id="view_scroll_right" title="Другие виды" href="javascript:{}">
+															Вперед
+														</a>
                                                     </div> 
                         <!-- end views-block -->
                         <!-- end thumbnails -->
-                                                                <p class="resetimg clear no-print">
-                            <span id="wrapResetImages" style="display: none;">
-                                <a href="" data-id="resetImages">
-                                    <i class="fa fa-repeat"></i>
-                                    Показать все фотографии
-                                </a>
-                            </span>
-                        </p>
-                                    </div> 
+                                                    <p class="resetimg clear no-print">
+														<span id="wrapResetImages" style="display: none;">
+															<a href="" data-id="resetImages">
+																<i class="fa fa-repeat"></i>
+																Показать все фотографии
+															</a>
+														</span>
+													</p>
+												</div> 
                 <!-- center infos -->
-                <div class="pb-right-column col-sm-6 col-md-6 col-lg-4">
-                	<div class="product-info-line">
-                    	                         <p id="product_reference" style="display: none;">
-                            <label>Артикул </label>
-                            <span class="editable" itemprop="sku"></span>
-                        </p>
-                    </div>
-                    <h1 itemprop="name">The Norton Anthology of English </h1>
-                    <div class="product-info-line">
-                        <!-- availability or doesntExist -->
-                        <p id="availability_statut" style="display: none;">
-                            
-                            <span id="availability_value" class="label label-success"></span>
-                        </p>
-                                                    <p id="product_condition">
-                                <label>Состояние: </label>
-                                                                    <link itemprop="itemCondition" href="https://schema.org/NewCondition"/>
-                                    <span class="editable">Новый товар</span>
-                                                            </p>
-                                                                            <!-- number of item in stock -->
-                            <p id="pQuantityAvailable">
-                                <span id="quantityAvailable">76</span>
-                                <span  style="display: none;" id="quantityAvailableTxt">Товар</span>
-                                <span  id="quantityAvailableTxtMultiple">Товары</span>
-                            </p>
-                                            </div>
+												<div class="pb-right-column col-sm-6 col-md-6 col-lg-4">
+													<div class="product-info-line">
+														<p id="product_reference" style="display: none;">
+															<label>Артикул </label>
+															<span class="editable" itemprop="sku"></span>
+														</p>
+													</div>
+													<h1 itemprop="name">{{ instance.name }}</h1>
+													<div class="product-info-line">
+														<!-- availability or doesntExist -->
+														<p id="availability_statut" style="display: none;">
+															<span id="availability_value" class="label label-success"></span>
+														</p>
+														<p id="product_condition">
+															<label>Состояние: </label>
+															<link itemprop="itemCondition" href="https://schema.org/NewCondition"/>
+															<span class="editable">Новый товар</span>
+														</p>
+																											<!-- number of item in stock -->
+														<p id="pQuantityAvailable">
+															<span id="quantityAvailable">76</span>
+															<span  style="display: none;" id="quantityAvailableTxt">Товар</span>
+															<span  id="quantityAvailableTxtMultiple">Товары</span>
+														</p>
+													</div>
                                             
-                        <p class="warning_inline" id="last_quantities" style="display: none" >Внимание: ограниченное количество товара в наличии!</p>
-                                        <p id="availability_date" style="display: none;">
-                        <span id="availability_date_label">Будет доступен:</span>
-                        <span id="availability_date_value"></span>
-                    </p>
-                     <!-- Out of stock hook -->
-                    <div id="oosHook" style="display: none;">
-                        
-                    </div>
+													<p class="warning_inline" id="last_quantities" style="display: none" >Внимание: ограниченное количество товара в наличии!</p>
+													<p id="availability_date" style="display: none;">
+														<span id="availability_date_label">Будет доступен:</span>
+														<span id="availability_date_value"></span>
+													</p>
+													 <!-- Out of stock hook -->
+													<div id="oosHook" style="display: none;">
+														
+													</div>
                                          <!-- add to cart form-->
-                    <form id="buy_block" action="" method="post">
-                        <!-- hidden datas -->
-                        <p class="hidden">
-                            <input type="hidden" name="token" value="55971e9c30d77bceba1377d146677a95" />
-                            <input type="hidden" name="id_product" value="2" id="product_page_product_id" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="id_product_attribute" id="idCombination" value="" />
-                        </p>
-                        <div class="box-info-product">
-                            <div class="content_prices clearfix">
+													<form id="buy_block" action="" method="post">
+														<!-- hidden datas -->
+														<p class="hidden">
+															<input type="hidden" name="token" value="55971e9c30d77bceba1377d146677a95" />
+															<input type="hidden" name="id_product" value="2" id="product_page_product_id" />
+															<input type="hidden" name="add" value="1" />
+															<input type="hidden" name="id_product_attribute" id="idCombination" value="" />
+														</p>
+														<div class="box-info-product">
+															<div class="content_prices clearfix">
                                                                     <!-- prices -->
-                                    <div class="old-price-info">
-                                       <p id="old_price">
-                                            <span id="old_price_display">$80.25</span><!--  -->                                        </p>
-                                        <p id="reduction_percent" >
-                                            <span id="reduction_percent_display">-13%</span>
-                                        </p>
-                                        <p id="reduction_amount"  style="display:none">
-                                            <span id="reduction_amount_display"></span>
-                                        </p>
-                                    </div>
-                                    <p class="our_price_display" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                                        <link itemprop="availability" href="https://schema.org/InStock"/><span id="our_price_display" itemprop="price">$69.82</span><meta itemprop="priceCurrency" content="USD" />                                    </p>
-                                                                         <!-- end prices -->
+																<div class="old-price-info">
+																   <p id="old_price">
+																		<span id="old_price_display">$80.25</span><!--  -->                                        </p>
+																	<p id="reduction_percent" >
+																		<span id="reduction_percent_display">-13%</span>
+																	</p>
+																	<p id="reduction_amount"  style="display:none">
+																		<span id="reduction_amount_display"></span>
+																	</p>
+																</div>
+																<p class="our_price_display" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+																	<link itemprop="availability" href="https://schema.org/InStock"/>
+																	<span id="our_price_display" itemprop="price">${{ instance.cost }}</span>
+																	<meta itemprop="priceCurrency" content="USD" />
+																</p>
+																<!-- end prices -->
                                                                                                                                                                                  
                                 
                                 
-                                <div class="clear"></div>
-                            </div> <!-- end content_prices -->
-                            <div class="product_attributes clearfix">
+																<div class="clear"></div>
+															</div> <!-- end content_prices -->
+															<div class="product_attributes clearfix">
                             	                                <div class="clearfix">
                                     <!-- quantity wanted -->
-                                                                            <p id="quantity_wanted_p">
-                                            <label>Количество</label>
-                                            <input type="text" name="qty" id="quantity_wanted" class="text" value="1" />
-                                            <a href="#" data-field-qty="qty" class="btn btn-default button-minus product_quantity_down">
-                                                <span>
-                                                    <i class="fa fa-minus"></i>
-                                                </span>
-                                            </a>
-                                            <a href="#" data-field-qty="qty" class="btn btn-default button-plus product_quantity_up">
-                                                <span>
-                                                    <i class="fa fa-plus"></i>
-                                                 </span>
-                                            </a>
-                                            <span class="clearfix"></span>
-                                        </p>
-                                                                        <div id="add_to_cart_product_page_button" >
-                                        <p id="add_to_cart" class="buttons_bottom_block no-print">
-                                                                                            <button type="submit" name="Submit" class="btn btn-default ajax_add_to_cart_product_button">
-                                                    <span>В корзину</span>
-                                                </button>
-                                                                                    </p>
-                                    </div>
-                                 </div>
-                                <!-- minimal quantity wanted -->
-                                <p id="minimal_quantity_wanted_p" style="display: none;">
-                                    Минимальный заказ для товара 
-                                    <b id="minimal_quantity_label">1</b>
-                                </p>
-                            </div> <!-- end product_attributes -->
-                            <div class="box-cart-bottom">
-                                    <p class="buttons_bottom_block no-print">
-        <a id="wishlist_button_nopop" href="#" onclick="WishlistCart('wishlist_block_list', 'add', '2', $('#idCombination').val(), document.getElementById('quantity_wanted').value); return false;" rel="nofollow"  title="В избранное">
-            Добавить в избранное
-        </a>
-    </p>
-<!-- Productpaymentlogos module -->
-<div id="product_payment_logos">
-	<div class="box-security">
-    <h5 class="product-heading-h5"></h5>
-  			<img src="/prestashop_54824/modules/productpaymentlogos/img/payment-logo.png" alt="" class="img-responsive" />
-	    </div>
-</div>
-<!-- /Productpaymentlogos module -->
-                            </div> <!-- end box-cart-bottom -->
-                        </div> <!-- end box-info-product -->
-                    </form>
-                                        <div class="extra-right">	<p class="socialsharing_product no-print">
-					<button data-type="twitter" type="button" class="btn btn-twitter social-sharing">
-				<i class="fa fa-twitter"></i>
-			</button>
-							<button data-type="facebook" type="button" class="btn btn-facebook social-sharing">
-				<i class="fa fa-facebook"></i>
-			</button>
-							<button data-type="google-plus" type="button" class="btn btn-google-plus social-sharing">
-				<i class="fa fa-google-plus"></i>
-			</button>
-							<button data-type="pinterest" type="button" class="btn btn-pinterest social-sharing">
-				<i class="fa fa-pinterest"></i>
-			</button>
-			</p>
-    <div id="product_comments_block_extra" class="no-print" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-                    <div class="comments_note clearfix">
-                <span>Рейтинг&nbsp;</span>
-                <div class="star_content clearfix">
-                                                                        <div class="star star_on"></div>
-                                                                                                <div class="star star_on"></div>
-                                                                                                <div class="star star_on"></div>
-                                                                                                <div class="star"></div>
-                                                                                                <div class="star"></div>
-                                                                <meta itemprop="worstRating" content = "0" />
-                    <meta itemprop="ratingValue" content = "3" />
-                    <meta itemprop="bestRating" content = "5" />
-                </div>
-            </div> <!-- .comments_note -->
+																	<p id="quantity_wanted_p">
+																		<label>Количество</label>
+																		<input type="text" name="qty" id="quantity_wanted" class="text" value="1" />
+																		<a href="#" data-field-qty="qty" class="btn btn-default button-minus product_quantity_down">
+																			<span>
+																				<i class="fa fa-minus"></i>
+																			</span>
+																		</a>
+																		<a href="#" data-field-qty="qty" class="btn btn-default button-plus product_quantity_up">
+																			<span>
+																				<i class="fa fa-plus"></i>
+																			 </span>
+																		</a>
+																		<span class="clearfix"></span>
+																	</p>
+                                                                    <div id="add_to_cart_product_page_button" >
+																		<p id="add_to_cart" class="buttons_bottom_block no-print">
+                                                                            <button type="submit" name="Submit" class="btn btn-default ajax_add_to_cart_product_button">
+																				<span>В корзину</span>
+																			</button>
+                                                                        </p>
+																	</div>
+																 </div>
+																<!-- minimal quantity wanted -->
+																<p id="minimal_quantity_wanted_p" style="display: none;">
+																	Минимальный заказ для товара 
+																	<b id="minimal_quantity_label">1</b>
+																</p>
+															</div> <!-- end product_attributes -->
+															<div class="box-cart-bottom">
+																<p class="buttons_bottom_block no-print">
+																	<a id="wishlist_button_nopop" href="#" onclick="WishlistCart('wishlist_block_list', 'add', '2', $('#idCombination').val(), document.getElementById('quantity_wanted').value); return false;" rel="nofollow"  title="В избранное">
+																		Добавить в избранное
+																	</a>
+																</p>
+																<!-- Productpaymentlogos module -->
+																<div id="product_payment_logos">
+																	<div class="box-security">
+																	<h5 class="product-heading-h5"></h5>
+																			<img src="/prestashop_54824/modules/productpaymentlogos/img/payment-logo.png" alt="" class="img-responsive" />
+																		</div>
+																</div>
+																<!-- /Productpaymentlogos module -->
+															</div> <!-- end box-cart-bottom -->
+														</div> <!-- end box-info-product -->
+													</form>
+													<div class="extra-right">	
+														<p class="socialsharing_product no-print">
+															<button data-type="twitter" type="button" class="btn btn-twitter social-sharing">
+																<i class="fa fa-twitter"></i>
+															</button>
+																			<button data-type="facebook" type="button" class="btn btn-facebook social-sharing">
+																<i class="fa fa-facebook"></i>
+															</button>
+																			<button data-type="google-plus" type="button" class="btn btn-google-plus social-sharing">
+																<i class="fa fa-google-plus"></i>
+															</button>
+																			<button data-type="pinterest" type="button" class="btn btn-pinterest social-sharing">
+																<i class="fa fa-pinterest"></i>
+															</button>
+														</p>
+														<div id="product_comments_block_extra" class="no-print" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+															<div class="comments_note clearfix">
+																<span>Рейтинг&nbsp;</span>
+																<div class="star_content clearfix">
+																	<div class="star star_on"></div>
+																	<div class="star star_on"></div>
+																	<div class="star star_on"></div>
+																	<div class="star"></div>
+																	<div class="star"></div>
+																	<meta itemprop="worstRating" content = "0" />
+																	<meta itemprop="ratingValue" content = "3" />
+																	<meta itemprop="bestRating" content = "5" />
+																</div>
+															</div> <!-- .comments_note -->
             
-        <ul class="comments_advices">
-                            <li>
-                    <a href="#idTab5" class="reviews" title="Читать отзывы">
-                        Читать отзывы (<span itemprop="reviewCount">1</span>)
-                    </a>
-                </li>
-                                </ul>
-    </div>
-<!--  /Module ProductComments --></div>                                            <!-- usefull links-->
-                        <ul id="usefull_link_block" class="clearfix no-print">
-                                                            <!--li class="print">
-                                    <a href="javascript:print();">
-                                        Печать
-                                    </a>
-                                </li-->
-                        </ul>
-                                    </div>
-                <!-- end center infos-->
-	</div> <!-- end primary_block -->
-	    	        	<div class="clearfix product-information">
-                <ul class="product-info-tabs nav nav-stacked col-sm-3 col-md-3 col-lg-3">
-                                            <li class="product-description-tab"><a data-toggle="tab" href="#product-description-tab-content">Описание</a></li>
-                                                                                    <li class="product-features-tab"><a data-toggle="tab" href="#product-features-tab-content">Характеристики</a></li>
-                                                                                    <li class="product-video-tab">
-        <a href="#product-video-tab-content" data-toggle="tab">Video</a>
-    </li>
+															<ul class="comments_advices">
+																<li>
+																	<a href="#idTab5" class="reviews" title="Читать отзывы">
+																		Читать отзывы (<span itemprop="reviewCount">1</span>)
+																	</a>
+																</li>
+															</ul>
+														</div>
+													<!--  /Module ProductComments -->
+													</div>                                            
+													<!-- usefull links-->
+													<ul id="usefull_link_block" class="clearfix no-print">
+														<!--li class="print">
+															<a href="javascript:print();">
+																Печать
+															</a>
+														</li-->
+													</ul>
+												</div>
+														<!-- end center infos-->
+											</div> 
+											<!-- end primary_block -->
+											<div class="clearfix product-information">
+												<ul class="product-info-tabs nav nav-stacked col-sm-3 col-md-3 col-lg-3">
+													<li class="product-description-tab"><a data-toggle="tab" href="#product-description-tab-content">Описание</a></li>
+                                                    <li class="product-features-tab"><a data-toggle="tab" href="#product-features-tab-content">Характеристики</a></li>
+                                                    <li class="product-video-tab">
+														<a href="#product-video-tab-content" data-toggle="tab">Video</a>
+													</li>
 
-                </ul>
-                <div class="tab-content col-sm-9 col-md-9 col-lg-9">
-                                            <div id="product-description-tab-content" class="product-description-tab-content tab-pane">
-                            <div class="rte"><p>Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.<br /><br /> But those times are long gone and we live in 21st century, and the most revolutionary thing that had happened is that books have lost their natural view. Books became more available. On-line book stores can offer you a great assortment of books. Can you imagine a world of knowledge without limits? You can get everything you want and all you have to do is just visit our store. We have tremendous variety of products; here you can find the world <strong>famous bestsellers</strong> and the books of unknown authors. Actually we do understand that our activity is very important for many of you and we will never let you down.<br /><br />Our business is very noble and it has many traditions. That is why we have such a great number of devoted clients all over the country. It is a great pleasure to give people the knowledge and the power of the intelligence. We all must remember that our forefathers didn’t have such unlimited abilities as we have. <br />The diversity of our products is unbelievable because we have a vast book collection - all genres and styles! Our company guarantees the quality of our goods because we care about our clients. If you have some questions about our products, terms and other features, you can address our <strong>superb 24/7 support system</strong>.</p></div>
-                        </div>
+												</ul>
+												<div class="tab-content col-sm-9 col-md-9 col-lg-9">
+												<div id="product-description-tab-content" class="product-description-tab-content tab-pane">
+													<div class="rte"><p>{{ instance.content }}</p></div>
+												</div>
                                         <!-- quantity discount -->
 										
                                                 
@@ -675,9 +659,9 @@ var wishlistProductsIds = false;
 																<img src="/static/products/img/p/9/9-medium_default.jpg" alt="The Norton Anthology of English " />
 																<div class="product_desc">
 																	<p class="product_name">
-																		<strong>The Norton Anthology of English </strong>
+																		<strong>{{ instance.name }}</strong>
 																	</p>
-																	<p>Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them.</p>
+																	<p>{{ instance.content }}</p>
 																</div>
 															</div>
 															<div class="new_comment_form_content col-xs-12 col-sm-6">

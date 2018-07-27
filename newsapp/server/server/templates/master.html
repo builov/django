@@ -14,7 +14,22 @@
 		<meta name="apple-mobile-web-app-capable" content="yes" /> 
 		<link rel="icon" type="image/vnd.microsoft.icon" href="/static/products/img/favicon.ico" />
 		<link rel="shortcut icon" type="image/x-icon" href="/static/products/img/favicon.ico" />
-		{% block page_static %}{% endblock %}
+		<link rel="stylesheet" href="/static/products/css/global.css" media="all" />
+		<link rel="stylesheet" href="/static/products/css/autoload/highdpi.css" media="all" />
+		<link rel="stylesheet" href="/static/products/css/autoload/responsive-tables.css" media="all" />
+		<link rel="stylesheet" href="/static/products/css/autoload/uniform.default.css" media="all" />
+		{% block page_css %}{% endblock %}
+		<script type="text/javascript" src="/static/products/js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="/static/products/js/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="/static/products/js/jquery.easing.js"></script>
+		<script type="text/javascript" src="/static/products/js/tools.js"></script>
+		<script type="text/javascript" src="/static/products/js/global.js"></script>
+		{% block page_js %}{% endblock %}
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic' rel='stylesheet' type='text/css'>
+		<!--[if IE 8]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
 	</head>
 
 	{% block page_content %}{% endblock %}
