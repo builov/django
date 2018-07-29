@@ -4,6 +4,10 @@ from django.http import HttpResponse
 
 from . import models
 
+from . import forms
+
+
+
 def index(request):
 
 	user = request.user
@@ -19,3 +23,14 @@ def product_detail(request, pk):
 	instance = get_object_or_404(models.Product, id=pk)
 	
 	return render(request, 'products/card.html', {'instance': instance})
+
+def product_edit(request):
+
+    print('*'*50)
+
+    print(request.POST)
+
+    form = forms.ProductForm()
+
+    return render(request, 'products/edit.html', {'form': form})
+
