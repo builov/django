@@ -1,0 +1,121 @@
+<!-- MODULE Block cart -->
+							<div class="cartBox clearfix">
+								<div class="shopping_cart ">
+									<a href="" title="Просмотр корзины" rel="nofollow">
+										<b>Корзина</b>
+										<span class="ajax_cart_quantity unvisible">0</span>
+										<span class="ajax_cart_product_txt unvisible">товар</span>
+										<span class="ajax_cart_product_txt_s unvisible">Товары</span>
+										<span class="ajax_cart_total unvisible">
+										</span>
+										<span class="ajax_cart_no_product">(пусто)</span>
+									</a>
+									<div class="cart_block block">
+										<div class="block_content">
+											<!-- block list of products -->
+											<div class="cart_block_list">
+												<p class="cart_block_no_products">
+													Нет товаров
+												</p>
+												<div class="cart-prices">
+													<div class="cart-prices-line first-line  unvisible">
+														<span class="cart_block_shipping_cost ajax_cart_shipping_cost">
+															Определить
+														</span>
+														<span>
+															Доставка:
+														</span>
+													</div>
+													<div class="cart-prices-line last-line">
+														<span class="price cart_block_total ajax_block_cart_total">$0.00</span>
+														<span>Итого, к оплате:</span>
+													</div>
+												</div>
+												<p class="cart-buttons">
+													<a id="button_order_cart" class="btn btn-default btn-sm icon-right" href="" title="Оформить заказ" rel="nofollow">
+														<span>
+															Оформить заказ
+														</span>
+													</a>
+												</p>
+											</div>
+										</div>
+									</div><!-- .cart_block -->
+								</div>
+							</div>
+
+							<div id="layer_cart">
+								<div class="clearfix">
+									<div class="layer_cart_product col-xs-12 col-md-6">
+										<span class="cross" title="Закрыть окно"></span>
+										<h2>
+											<i class="fa fa-ok"></i>
+											Товар добавлен в корзину
+										</h2>
+										<div class="product-image-container layer_cart_img">
+										</div>
+										<div class="layer_cart_product_info">
+											<span id="layer_cart_product_title" class="product-name"></span>
+											<span id="layer_cart_product_attributes"></span>
+											<div>
+												<strong class="dark">Количество</strong>
+												<span id="layer_cart_product_quantity"></span>
+											</div>
+											<div>
+												<strong class="dark">Итого, к оплате:</strong>
+												<span id="layer_cart_product_price"></span>
+											</div>
+										</div>
+									</div>
+									<div class="layer_cart_cart col-xs-12 col-md-6">
+										<h2>
+											<!-- Plural Case [both cases are needed because page may be updated in Javascript] -->
+											<span class="ajax_cart_product_txt_s  unvisible">
+												Товаров в корзине: <span class="ajax_cart_quantity">0</span>.
+											</span>
+											<!-- Singular Case [both cases are needed because page may be updated in Javascript] -->
+											<span class="ajax_cart_product_txt ">
+												Сейчас в корзине 1 товар.
+											</span>
+										</h2>
+							
+										<div class="layer_cart_row">
+											<strong class="dark">
+												Стоимость:
+																	</strong>
+											<span class="ajax_block_products_total">
+																	</span>
+										</div>
+							
+														<div class="layer_cart_row">
+											<strong class="dark unvisible">
+												Стоимость доставки&nbsp;					</strong>
+											<span class="ajax_cart_shipping_cost unvisible">
+																			Определить											</span>
+										</div>
+														<div class="layer_cart_row">	
+											<strong class="dark">
+												Итого, к оплате:
+																	</strong>
+											<span class="ajax_block_cart_total">
+																	</span>
+										</div>
+										<div class="button-container">	
+											<span class="continue btn btn-default btn-sm icon-left" title="Продолжить покупки">
+												<span>
+													Продолжить покупки
+												</span>
+											</span>
+											<a class="btn btn-default btn-sm icon-right" href="" title="Оформить заказ" rel="nofollow">
+												<span>
+													Оформить заказ
+												</span>
+											</a>	
+										</div>
+									</div>
+								</div>
+								<div class="crossseling"></div>
+							</div> <!-- #layer_cart -->
+							<div class="layer_cart_overlay"></div>
+
+							<!-- /MODULE Block cart --> 

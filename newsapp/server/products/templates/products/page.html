@@ -1,23 +1,10 @@
-<!DOCTYPE HTML>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ru-ru"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8 ie7" lang="ru-ru"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="ru-ru"><![endif]-->
-<!--[if gt IE 8]> <html class="no-js ie9" lang="ru-ru"><![endif]-->
-<html lang="ru-ru">
-	<head>
-		<meta charset="utf-8" />
-		<title>Classic - Book Hangover</title>
-		<meta name="description" content="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring." />
-		<meta name="generator" content="PrestaShop" />
-		<meta name="robots" content="index,follow" />
-		<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.0, initial-scale=1.0" /> 
-		<meta name="apple-mobile-web-app-capable" content="yes" /> 
-		<link rel="icon" type="image/vnd.microsoft.icon" href="/static/products/img/favicon.ico?1463616247" />
-		<link rel="shortcut icon" type="image/x-icon" href="/static/products/img/favicon.ico?1463616247" />
-			<link rel="stylesheet" href="/static/products/css/global.css" media="all" />
-			<link rel="stylesheet" href="/static/products/css/autoload/highdpi.css" media="all" />
-			<link rel="stylesheet" href="/static/products/css/autoload/responsive-tables.css" media="all" />
-			<link rel="stylesheet" href="/static/products/css/autoload/uniform.default.css" media="all" />
+{% extends 'master.html' %}
+
+{% block page_title %}Classic - Book Hangover{% endblock %}
+
+{% block page_description %}Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.{% endblock %}
+
+{% block page_css %}			
 			<link rel="stylesheet" href="/static/products/js/fancybox/jquery.fancybox.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/product_list.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/category.css" media="all" />
@@ -33,8 +20,6 @@
 			<link rel="stylesheet" href="/static/products/js/autocomplete/jquery.autocomplete.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/modules/blocktags/blocktags.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/modules/blockviewed/blockviewed.css" media="all" />
-			<link rel="stylesheet" href="/static/products/css/modules/themeconfigurator/css/hooks.css" media="all" />
-			<link rel="stylesheet" href="/static/products/css/modules/themeconfigurator/css/live_configurator.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/modules/blockwishlist/blockwishlist.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/modules/productcomments/productcomments.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/modules/blockpermanentlinks/blockpermanentlinks.css" media="all" />
@@ -49,84 +34,82 @@
 			<link rel="stylesheet" href="/static/products/css/modules/tmmegamenu/views/css/front.css" media="all" />
 			<link rel="stylesheet" href="/static/products/modules/tmsociallogin/views/css/front.css" media="all" />
 			<link rel="stylesheet" href="/static/products/css/modules/tmsearch/views/css/tmsearch.css" media="all" />
-		<script type="text/javascript">
-var CUSTOMIZE_TEXTFIELD = 1;
-var FancyboxI18nClose = 'Закрыть';
-var FancyboxI18nNext = 'Вперед';
-var FancyboxI18nPrev = 'Назад';
-var added_to_wishlist = 'Добавлено в избранное.';
-var ajax_allowed = true;
-var ajaxsearch = true;
-var baseDir = '/';
-var baseUri = '/';
-var comparator_max_item = 2;
-var comparedProductsIds = [];
-var contentOnly = false;
-var customizationIdMessage = 'Модификация №';
-var delete_txt = 'Удалить';
-var displayList = false;
-var freeProductTranslation = 'Бесплатно!';
-var freeShippingTranslation = 'Бесплатная доставка!';
-var generated_date = 1532186979;
-var hasDeliveryAddress = false;
-var id_lang = 3;
-var img_dir = '/img/';
-var instantsearch = true;
-var isGuest = 0;
-var isLogged = 0;
-var isMobile = false;
-var loggin_required = 'Вы должны авторизироваться для управления избранным.';
-var max_item = 'Нельзя добавить больше чем 2 товаров для сравнения';
-var min_item = 'Выберите по крайней мере один товар';
-var module_url = '';
-var mywishlist_url = '';
-var nbItemsPerLine = 3;
-var nbItemsPerLineMobile = 2;
-var nbItemsPerLineTablet = 2;
-var page_name = 'category';
-var placeholder_blocknewsletter = 'Введите ваш e-mail';
-var popup_status = true;
-var priceDisplayMethod = 1;
-var priceDisplayPrecision = 2;
-var quickView = true;
-var removingLinkText = 'удалить товар из корзины';
-var request = '';
-var roundMode = 2;
-var scroll_step = 150;
-var scrool_speed = 800;
-var search_url = '';
-var search_url_local = '';
-var static_token = '';
-var text_close = 'Закрыть';
-var text_description = 'Введите ваш адрес электронной почты, чтобы получать все новости, обновления о новых поступлениях, специальных предложениях и другую информацию о скидках.';
-var text_email = 'Ваш адрес электронной почты';
-var text_heading = 'Подпишитесь на нашу рассылку';
-var text_heading_1 = 'Подпишитесь на нашу рассылку';
-var text_heading_2 = 'Вы успешно подписались на рассылку';
-var text_heading_3 = 'Ошибка';
-var text_placeholder = 'Enter your e-mail';
-var text_remove = 'Больше не показывать';
-var text_sign = 'Подписаться';
-var tmsearch_description = false;
-var tmsearch_height = 600;
-var tmsearch_image = true;
-var tmsearch_limit = true;
-var tmsearch_limit_num = 3;
-var tmsearch_manufacturer = false;
-var tmsearch_price = true;
-var tmsearch_reference = true;
-var tmsearch_scroll = true;
-var toBeDetermined = 'Определить';
-var token = '';
-var user_newsletter_status = 0;
-var usingSecureMode = true;
-var wishlistProductsIds = false;
-</script>			
-			<script type="text/javascript" src="/static/products/js/jquery-1.11.0.min.js"></script>
-			<script type="text/javascript" src="/static/products/js/jquery-migrate-1.2.1.min.js"></script>
-			<script type="text/javascript" src="/static/products/js/jquery.easing.js"></script>
-			<script type="text/javascript" src="/static/products/js/tools.js"></script>
-			<script type="text/javascript" src="/static/products/js/global.js"></script>
+{% endblock %}			
+			
+{% block page_js %}
+			<script type="text/javascript">
+				var CUSTOMIZE_TEXTFIELD = 1;
+				var FancyboxI18nClose = 'Закрыть';
+				var FancyboxI18nNext = 'Вперед';
+				var FancyboxI18nPrev = 'Назад';
+				var added_to_wishlist = 'Добавлено в избранное.';
+				var ajax_allowed = true;
+				var ajaxsearch = true;
+				var baseDir = '/';
+				var baseUri = '/';
+				var comparator_max_item = 2;
+				var comparedProductsIds = [];
+				var contentOnly = false;
+				var customizationIdMessage = 'Модификация №';
+				var delete_txt = 'Удалить';
+				var displayList = false;
+				var freeProductTranslation = 'Бесплатно!';
+				var freeShippingTranslation = 'Бесплатная доставка!';
+				var generated_date = 1532186979;
+				var hasDeliveryAddress = false;
+				var id_lang = 3;
+				var img_dir = '/img/';
+				var instantsearch = true;
+				var isGuest = 0;
+				var isLogged = 0;
+				var isMobile = false;
+				var loggin_required = 'Вы должны авторизироваться для управления избранным.';
+				var max_item = 'Нельзя добавить больше чем 2 товаров для сравнения';
+				var min_item = 'Выберите по крайней мере один товар';
+				var module_url = '';
+				var mywishlist_url = '';
+				var nbItemsPerLine = 3;
+				var nbItemsPerLineMobile = 2;
+				var nbItemsPerLineTablet = 2;
+				var page_name = 'category';
+				var placeholder_blocknewsletter = 'Введите ваш e-mail';
+				var popup_status = true;
+				var priceDisplayMethod = 1;
+				var priceDisplayPrecision = 2;
+				var quickView = true;
+				var removingLinkText = 'удалить товар из корзины';
+				var request = '';
+				var roundMode = 2;
+				var scroll_step = 150;
+				var scrool_speed = 800;
+				var search_url = '';
+				var search_url_local = '';
+				var static_token = '';
+				var text_close = 'Закрыть';
+				var text_description = 'Введите ваш адрес электронной почты, чтобы получать все новости, обновления о новых поступлениях, специальных предложениях и другую информацию о скидках.';
+				var text_email = 'Ваш адрес электронной почты';
+				var text_heading = 'Подпишитесь на нашу рассылку';
+				var text_heading_1 = 'Подпишитесь на нашу рассылку';
+				var text_heading_2 = 'Вы успешно подписались на рассылку';
+				var text_heading_3 = 'Ошибка';
+				var text_placeholder = 'Enter your e-mail';
+				var text_remove = 'Больше не показывать';
+				var text_sign = 'Подписаться';
+				var tmsearch_description = false;
+				var tmsearch_height = 600;
+				var tmsearch_image = true;
+				var tmsearch_limit = true;
+				var tmsearch_limit_num = 3;
+				var tmsearch_manufacturer = false;
+				var tmsearch_price = true;
+				var tmsearch_reference = true;
+				var tmsearch_scroll = true;
+				var toBeDetermined = 'Определить';
+				var token = '';
+				var user_newsletter_status = 0;
+				var usingSecureMode = true;
+				var wishlistProductsIds = false;
+			</script>
 			<script type="text/javascript" src="/static/products/js/autoload/10-bootstrap.min.js"></script>
 			<script type="text/javascript" src="/static/products/js/autoload/14-device.min.js"></script>
 			<script type="text/javascript" src="/static/products/js/autoload/15-jquery.total-storage.min.js"></script>
@@ -156,14 +139,10 @@ var wishlistProductsIds = false;
 			<script type="text/javascript" src="/static/products/modules/tmmegamenu/views/js/superfish.js"></script>
 			<script type="text/javascript" src="/static/products/js/modules/tmmegamenu/views/js/front.js"></script>
 			<script type="text/javascript" src="/static/products/modules/tmsearch/views/js/tmsearch.js"></script>
-
-        <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic' rel='stylesheet' type='text/css'>
-		<!--[if IE 8]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-		<![endif]-->
-	</head>
-	<body id="category" class="category category-43 category-classic hide-right-column lang_ru  two-columns">
+{% endblock %}
+	
+{% block page_content %}
+	<body id="category" class="category category-43 category-classic hide-right-column lang_ru two-columns">
 	    <!--[if IE 8]>
         <div style='clear:both;height:59px;padding:0 15px 0 15px;position:relative;z-index:10000;text-align:center;'><a href="//www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="https://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div>
 		<![endif]-->
@@ -171,277 +150,14 @@ var wishlistProductsIds = false;
 			<div id="toTop" style="display: block;"></div>
 			<div class="header-container">
 				<header id="header">
-					<div class="banner">
-						<div class="container">
-							<div id="inCartLayered" class="row">
-								
-							</div>
-						</div>
-					</div>
+					{% include 'includes/inc_banner.html' %}
                     <div id="stickBox">
                         <div class="mainHeader">
-                            <div class="nav">
-                            	<span class="close"></span>
-								<span class="open"></span>
-                                <nav>
-									<div id="tmsearch" class="clearfix">
-										<form id="tmsearchbox" method="get" action="" >
-											<input type="hidden" name="controller" value="search" />
-											<input type="hidden" name="orderby" value="position" />
-											<input type="hidden" name="orderway" value="desc" />
-											<div class="currentBox"></div>
-											<input class="tm_search_query form-control toogle_content_box" type="text" id="tm_search_query" name="search_query" placeholder="Поиск" value="" />
-											<button type="submit" name="tm_submit_search" class="btn btn-default button-search">
-												<span>Поиск</span>
-											</button>
-										</form>
-									</div>
-									<div id="header-login">
-										<div class="currentBox header_user_info login"><a href="#" onclick="return false;"><span>Войти</span></a></div>
-										<ul id="header-login-content" class="toogle_content_box">
-											<li>
-												<form action="" method="post" id="header_login_form">
-														<div id="create_header_account_error" class="alert alert-danger" style="display:none;"></div>
-														<div class="form_content clearfix">
-															<div class="form-group">
-																<input class="is_required validate account_input form-control" data-validate="isEmail" type="text" id="header-email" name="header-email" placeholder="E-mail адрес" value="" />
-															</div>
-															<div class="form-group">
-																<span><input class="is_required validate account_input form-control" type="password" data-validate="isPasswd" id="header-passwd" name="header-passwd" placeholder="Пароль" value="" autocomplete="off" /></span>
-															</div>
-															<p class="submit">
-																<button type="button" id="HeaderSubmitLogin" name="HeaderSubmitLogin"><span>Войти</span></button>
-															</p>
-															<p>
-																<a href=""><span>Create an account</span></a>
-															</p>
-															<div class="clearfix">
-																<a class="btn btn-default btn-sm btn-login-facebook" href="" title="Войти с помощью Facebook">Facebook Вход</a>
-																<a class="btn btn-default btn-sm btn-login-google" href="" title="Войти с помощью Google">Google Вход</a>
-															</div>
-														</div>
-												</form>
-											</li>
-										</ul>
-									</div><!-- Block currencies module -->
-									<div class="currency_language">
-										<div class="currentBox"></div>
-										<div class="toogle_content_box">
-											<div id="currencies-block-top">
-												<form id="setCurrency" action="" method="post">
-													<div class="current">
-														<input type="hidden" name="id_currency" id="id_currency" value=""/>
-														<input type="hidden" name="SubmitCurrency" value="" />
-														<span class="cur-label">Валюта :</span>
-														<strong>USD</strong>
-													</div>
-													<ul id="first-currencies" class="currencies_ul toogle_content">
-														<li class="selected">
-															<a href="javascript:setCurrency(1);" rel="nofollow" title="Dollar (USD)">
-																Dollar (USD)
-															</a>
-														</li>
-														<li >
-															<a href="javascript:setCurrency(2);" rel="nofollow" title="Euro (EUR)">
-																Euro (EUR)
-															</a>
-														</li>
-													</ul>
-												</form>
-											</div>
-										<!-- /Block currencies module -->
-
-										<!-- Block languages module -->
-											<div id="languages-block-top" class="languages-block">
-												<div class="current">
-													<span>Russian</span>
-												</div>
-												<ul id="first-languages" class="languages-block_ul toogle_content">
-													<li >
-														<a href="" title="English (English)">
-															<span>English</span>
-														</a>
-													</li>
-													<li >
-														<a href="" title="Deutsch (German)">
-															<span>Deutsch</span>
-														</a>
-													</li>
-													<li class="selected">
-														<span>Russian</span>
-													</li>
-													<li >
-														<a href="" title="Español (Spanish)">
-															<span>Español</span>
-														</a>
-													</li>
-													<li >
-														<a href="" title="Français (French)">
-															<span>Français</span>
-														</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								<!-- /Block languages module -->
-								</nav>
-                            </div>
-                            <div id="header_logo">
-                                <a href="/" title="Book Hangover">
-                                    <img class="logo img-responsive" src="/static/products/img/new-store-logo-1433086504.jpg" alt="Book Hangover" width="66" height="62"/>
-                                </a>
-                            </div>
-                            <!-- MODULE Block cart -->
-							<div class="cartBox clearfix">
-								<div class="shopping_cart ">
-									<a href="" title="Просмотр корзины" rel="nofollow">
-										<b>Корзина</b>
-										<span class="ajax_cart_quantity unvisible">0</span>
-										<span class="ajax_cart_product_txt unvisible">товар</span>
-										<span class="ajax_cart_product_txt_s unvisible">Товары</span>
-										<span class="ajax_cart_total unvisible">
-										</span>
-										<span class="ajax_cart_no_product">(пусто)</span>
-									</a>
-									<div class="cart_block block">
-										<div class="block_content">
-											<!-- block list of products -->
-											<div class="cart_block_list">
-												<p class="cart_block_no_products">
-													Нет товаров
-												</p>
-												<div class="cart-prices">
-													<div class="cart-prices-line first-line  unvisible">
-														<span class="cart_block_shipping_cost ajax_cart_shipping_cost">
-															Определить
-														</span>
-														<span>
-															Доставка:
-														</span>
-													</div>
-													<div class="cart-prices-line last-line">
-														<span class="price cart_block_total ajax_block_cart_total">$0.00</span>
-														<span>Итого, к оплате:</span>
-													</div>
-												</div>
-												<p class="cart-buttons">
-													<a id="button_order_cart" class="btn btn-default btn-sm icon-right" href="" title="Оформить заказ" rel="nofollow">
-														<span>
-															Оформить заказ
-														</span>
-													</a>
-												</p>
-											</div>
-										</div>
-									</div><!-- .cart_block -->
-								</div>
-							</div>
-
-							<div id="layer_cart">
-								<div class="clearfix">
-									<div class="layer_cart_product col-xs-12 col-md-6">
-										<span class="cross" title="Закрыть окно"></span>
-										<h2>
-											<i class="fa fa-ok"></i>
-											Товар добавлен в корзину
-										</h2>
-										<div class="product-image-container layer_cart_img">
-										</div>
-										<div class="layer_cart_product_info">
-											<span id="layer_cart_product_title" class="product-name"></span>
-											<span id="layer_cart_product_attributes"></span>
-											<div>
-												<strong class="dark">Количество</strong>
-												<span id="layer_cart_product_quantity"></span>
-											</div>
-											<div>
-												<strong class="dark">Итого, к оплате:</strong>
-												<span id="layer_cart_product_price"></span>
-											</div>
-										</div>
-									</div>
-									<div class="layer_cart_cart col-xs-12 col-md-6">
-										<h2>
-											<!-- Plural Case [both cases are needed because page may be updated in Javascript] -->
-											<span class="ajax_cart_product_txt_s  unvisible">
-												Товаров в корзине: <span class="ajax_cart_quantity">0</span>.
-											</span>
-											<!-- Singular Case [both cases are needed because page may be updated in Javascript] -->
-											<span class="ajax_cart_product_txt ">
-												Сейчас в корзине 1 товар.
-											</span>
-										</h2>
-							
-										<div class="layer_cart_row">
-											<strong class="dark">
-												Стоимость:
-																	</strong>
-											<span class="ajax_block_products_total">
-																	</span>
-										</div>
-							
-														<div class="layer_cart_row">
-											<strong class="dark unvisible">
-												Стоимость доставки&nbsp;					</strong>
-											<span class="ajax_cart_shipping_cost unvisible">
-																			Определить											</span>
-										</div>
-														<div class="layer_cart_row">	
-											<strong class="dark">
-												Итого, к оплате:
-																	</strong>
-											<span class="ajax_block_cart_total">
-																	</span>
-										</div>
-										<div class="button-container">	
-											<span class="continue btn btn-default btn-sm icon-left" title="Продолжить покупки">
-												<span>
-													Продолжить покупки
-												</span>
-											</span>
-											<a class="btn btn-default btn-sm icon-right" href="" title="Оформить заказ" rel="nofollow">
-												<span>
-													Оформить заказ
-												</span>
-											</a>	
-										</div>
-									</div>
-								</div>
-								<div class="crossseling"></div>
-							</div> <!-- #layer_cart -->
-							<div class="layer_cart_overlay"></div>
-
-				<!-- /MODULE Block cart --> 
-							<div class="container top_menu">
-								<div class="menu-title">Меню</div>
-								<ul class="menu clearfix">
-									<li class=""><a href="">Biographies</a><div class="is-megamenu"><div id="megamenu-row-1" class="megamenu-row row megamenu-row-1"><div id="column-1-1" class="megamenu-col megamenu-col-1-1 col-sm-3 "><ul class="content"><li class="category"><a href="" title="Aliquam congue">Aliquam congue</a><ul><li class="category"><a href="" title="Lorem ipsum dolor">Lorem ipsum dolor</a></li><li class="category"><a href="" title="Sit amet conse">Sit amet conse</a></li><li class="category"><a href="" title="Ctetur adipisicing elit">Ctetur adipisicing elit</a></li><li class="category"><a href="" title="Sed do eiusmod">Sed do eiusmod</a></li><li class="category"><a href="" title="Tempor incididunt ut">Tempor incididunt ut</a></li><li class="category"><a href="" title="Labore et dolore">Labore et dolore</a></li></ul></li></ul></div><div id="column-1-2" class="megamenu-col megamenu-col-1-2 col-sm-3 "><ul class="content"><li class="category"><a href="" title="Pellentesque sed">Pellentesque sed</a><ul><li class="category"><a href="" title="Lorem ipsum dolor">Lorem ipsum dolor</a></li><li class="category"><a href="" title="Sit amet conse">Sit amet conse</a></li><li class="category"><a href="" title="Ctetur adipisicing elit">Ctetur adipisicing elit</a></li><li class="category"><a href="" title="Sed do eiusmod">Sed do eiusmod</a></li><li class="category"><a href="" title="Tempor incididunt ut">Tempor incididunt ut</a></li><li class="category"><a href="" title="Labore et dolore">Labore et dolore</a></li></ul></li></ul></div><div id="column-1-3" class="megamenu-col megamenu-col-1-3 col-sm-3 "><ul class="content"><li class="category"><a href="" title="Enim adipiscing">Enim adipiscing</a><ul><li class="category"><a href="" title="Lorem ipsum dolor">Lorem ipsum dolor</a></li><li class="category"><a href="" title="Sit amet conse">Sit amet conse</a></li><li class="category"><a href="" title="Ctetur adipisicing elit">Ctetur adipisicing elit</a></li><li class="category"><a href="" title="Sed do eiusmod">Sed do eiusmod</a></li><li class="category"><a href="" title="Tempor incididunt ut">Tempor incididunt ut</a></li><li class="category"><a href="" title="Labore et dolore">Labore et dolore</a></li></ul></li></ul></div><div id="column-1-4" class="megamenu-col megamenu-col-1-4 col-sm-3 "><ul class="content"><li class="category"><a href="" title="Phasellus">Phasellus</a><ul><li class="category"><a href="" title="Lorem ipsum dolor">Lorem ipsum dolor</a></li><li class="category"><a href="" title="Sit amet conse">Sit amet conse</a></li><li class="category"><a href="" title="Ctetur adipisicing elit">Ctetur adipisicing elit</a></li><li class="category"><a href="" title="Sed do eiusmod">Sed do eiusmod</a></li><li class="category"><a href="" title="Tempor incididunt ut">Tempor incididunt ut</a></li><li class="category"><a href="" title="Labore et dolore">Labore et dolore</a></li></ul></li></ul></div></div><div id="megamenu-row-2" class="megamenu-row row megamenu-row-2"><div id="column-2-1" class="megamenu-col megamenu-col-2-1 col-sm-6 "><ul class="content">	<li >
-										<a href="" >
-											<img class="img-responsive" src="/static/products/modules/tmmegamenu/images/230e7db9e60a6f26fa36bda5d9b64839f76c4eea_baner-menu1.jpg" alt="Banner Menu 1" />
-										</a>
-									</li>
-									</ul></div><div id="column-2-3" class="megamenu-col megamenu-col-2-3 col-sm-6 "><ul class="content">
-									<li >
-										<a href="" >
-											<img class="img-responsive" src="/static/products/modules/tmmegamenu/images/1678f89ae803b74f4e1522624be0ed9cd3221d15_baner-menu2.jpg" alt="Banner Menu 2" />
-										</a>
-									</li>
-									</ul></div></div></div>
-									</li>
-									<li class=""><a href="">business</a></li>
-									<li class=""><a href="">education</a></li>
-									<li class=""><a href="">history</a></li>
-									<li class=""><a href="">Children's</a></li>
-									<li class=" sfHoverForce"><a href="">Classic</a></li>
-								</ul>
-					
-							</div>
-    
-
+                            {% include 'includes/inc_nav.html' %}
+                            {% include 'includes/inc_header_logo.html' %}
+							{% include 'includes/inc_cart.html' %}
+							{% include 'includes/inc_top_menu.html' %}
 <!-- string(8) "category" -->
-
-
                         </div>
                     </div>    
 				</header>
@@ -627,13 +343,15 @@ var wishlistProductsIds = false;
 												<div class="productInner">
 													<div class="left-block">
 														<div class="product-image-container">
-															<a class="product_img_link"	href="" title="{{ itm.name }}" itemprop="url">
+															<a class="product_img_link"	href="{% url 'detail' itm.id %}" title="{{ itm.name }}" itemprop="url">
 																<img class="replace-2x img-responsive" src="/media/{{ itm.image }}" alt="{{ itm.name }}" title="{{ itm.name }}" itemprop="image" />
 															</a>
-															<a class="quick-view" href="" rel="">
+															<a class="quick-view" href="{% url 'detail' itm.id %}" rel="{% url 'detail' itm.id %}">
 																<span>Быстрый просмотр</span>
 															</a>
-															<span class="sale-label">Распродажа!</span>
+															<a class="sale-box" href="">
+																<span class="sale-label">Распродажа!</span>
+															</a>
 															<div class="content_price_2">
 																<span class="price-percent-reduction">-13%</span>
 															</div>
@@ -641,7 +359,7 @@ var wishlistProductsIds = false;
 													</div>
 													<div class="right-block">
 														<h5 itemprop="name">
-															<a class="product-name" href="" title="{{ itm.name }}" itemprop="url" >
+															<a class="product-name" href="{% url 'detail' itm.id %}" title="{{ itm.name }}" itemprop="url" >
 																<span class="list-name">{{ itm.name }}</span>
 																<span class="grid-name">{{ itm.name }}</span>
 															</a>
@@ -695,7 +413,7 @@ var wishlistProductsIds = false;
 																<a class="add_to_compare" href="" data-id-product="2" title="Добавить к сравнению"><span>Добавить к сравнению</span></a>
 															</div>
 															<div class="moreBox ">
-																<a itemprop="url" href="" title="См.">
+																<a itemprop="url" href="{% url 'detail' itm.id %}" title="См.">
 																	<span>Еще</span>
 																</a>
 															</div>
@@ -935,7 +653,9 @@ var wishlistProductsIds = false;
 										</div>
 									</section>
 									
-<!-- /MODULE Block specials --><!-- Block stores module -->
+<!-- /MODULE Block specials -->
+
+<!-- Block stores module -->
 
 									<section id="stores_block_left" class="block">
 										<h4 class="title_block">
@@ -994,408 +714,14 @@ var wishlistProductsIds = false;
 				<div class="footer-container">
 					<div class="footer-container-inner">
 						<footer id="footer" class="container">
-							<div class="row">	<!-- MODULE Block footer -->
-								<section class="footer-block col-xs-12 col-sm-3" id="block_various_links_footer">
-									<h4>Информация</h4>
-									<ul class="toggle-footer">
-										<li class="item">
-											<a href="" title="Скидки">
-												Скидки
-											</a>
-										</li>
-										<li class="item">
-											<a href="" title="Новые товары">
-												Новые товары
-											</a>
-										</li>
-										<li class="item">
-											<a href="" title="Популярные товары">
-												Популярные товары
-											</a>
-										</li>
-										<li class="item">
-											<a href="" title="Наш магазин">
-												Наш магазин
-											</a>
-										</li>
-										<li class="item">
-											<a href="" title="Свяжитесь с нами">
-												Свяжитесь с нами
-											</a>
-										</li>
-										<li class="item">
-											<a href="" title="Страница конфигурации">
-												Страница конфигурации
-											</a>
-										</li>
-										<li>
-											<a href="" title="Карта сайта">
-												Карта сайта
-											</a>
-										</li>
-									</ul>
-		
-								</section>
+							<div class="row">	
+							
+								{% include 'includes/inc_block_footer.html' %}
+								{% include 'includes/inc_myaccount.html' %}
+								{% include 'includes/inc_categories.html' %}
+								{% include 'includes/inc_newsletter.html' %}
+								{% include 'includes/inc_social_block.html' %}
 								
-								<div class="bottom-footer">
-									<div class="container">
-										&copy; <span class="current-year">2018</span> <a class="_blank" title="prestashop" href="https://www.prestashop.com">Сделано в PrestaShop™</a>
-										<a class="footer-logo" href="https://www.templatemonster.com/" rel="nofollow"><img src="/static/products/img/cms/footer-logo.png" alt="logo"></a>
-									</div>		
-								</div>
-		<!-- /MODULE Block footer -->
-		
-								<!-- Block myaccount module -->
-								<section class="footer-block col-xs-12 col-sm-3">
-									<h4>
-										<a href="" title="Управление моей учетной записью" rel="nofollow">Моя учетная запись</a>
-									</h4>
-									<div class="block_content toggle-footer">
-										<ul class="bullet">
-											<li>
-												<a href="" title="Мои заказы" rel="nofollow">Мои заказы</a>
-											</li>
-											<li>
-												<a href="" title="Мои возвраты" rel="nofollow">Мои возвраты</a>
-											</li>
-											<li>
-												<a href="" title="Мои платёжные квитанции" rel="nofollow">Мои платёжные квитанции</a>
-											</li>
-											<li>
-												<a href="" title="Мои адреса" rel="nofollow">Мои адреса</a>
-											</li>
-											<li>
-												<a href="" title="Управление моими персональными данными" rel="nofollow">Моя личная информация</a>
-											</li>
-										</ul>
-									</div>
-								</section>
-								<!-- /Block myaccount module -->
-								
-								<!-- Block categories module -->
-								<section class="blockcategories_footer footer-block col-xs-12 col-sm-3">
-									<h4>Категории</h4>
-									<div class="category_footer toggle-footer">
-										<div class="list">
-											<ul class="tree dhtml">
-												<li >
-													<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-														Biographies
-													</a>
-													<ul>
-														<li >
-															<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																Aliquam congue
-															</a>
-															<ul>
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Lorem ipsum dolor
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Sit amet conse
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Ctetur adipisicing elit
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Sed do eiusmod
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Tempor incididunt ut
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Labore et dolore
-																	</a>
-																</li>
-
-															</ul>
-														</li>
-
-														<li >
-															<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																Pellentesque sed
-															</a>
-															<ul>
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Lorem ipsum dolor
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Sit amet conse
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Ctetur adipisicing elit
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Sed do eiusmod
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Tempor incididunt ut
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Labore et dolore
-																	</a>
-																</li>
-
-															</ul>
-														</li>
-
-														<li >
-															<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																Enim adipiscing
-															</a>
-															<ul>
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Lorem ipsum dolor
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Sit amet conse
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Ctetur adipisicing elit
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Sed do eiusmod
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Tempor incididunt ut
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Labore et dolore
-																	</a>
-																</li>
-
-															</ul>
-														</li>
-
-														<li >
-															<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																Aliquet sit amet
-															</a>
-															<ul>
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Lorem ipsum dolor
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Sit amet conse
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Ctetur adipisicing elit
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Sed do eiusmod
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Tempor incididunt ut
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Labore et dolore
-																	</a>
-																</li>
-
-															</ul>
-														</li>
-
-														<li >
-															<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																Phasellus
-															</a>
-															<ul>
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Lorem ipsum dolor
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Sit amet conse
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Ctetur adipisicing elit
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Sed do eiusmod
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Tempor incididunt ut
-																	</a>
-																</li>
-
-																<li >
-																	<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-																		Labore et dolore
-																	</a>
-																</li>
-
-															</ul>
-														</li>
-
-													</ul>
-												</li>
-
-															
-												<li >
-													<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-														Business
-													</a>
-												</li>
-
-																			
-												<li >
-													<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-														Education
-													</a>
-												</li>
-
-																			
-												<li >
-													<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-														History
-													</a>
-												</li>
-
-																		
-												<li >
-													<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-														Children&#039;s
-													</a>
-												</li>
-
-																		
-												<li >
-													<a 	href="" title="Well, reading books as a hobby was always a noble, pleasant and very useful kind of activity. It gives knowledge, exerts on the process of development of your personality. For a long period of time books were very rare and because of such confines only some “esoteric” people could afford them. And you know what? Books always have some notes of mysticism. Just remember that special atmosphere of solitude in the library or in the old book-store, it seemed that imponderable scent of rational identity is in the air... The unique smell of old and new pages, soft cover and so on. Yeah, they are worth our admiring.">
-														Classic
-													</a>
-												</li>
-
-															
-												<li >
-													<a 	href="" title="">
-														test
-													</a>
-												</li>
-
-															
-											</ul>
-										</div>
-									</div> <!-- .category_footer -->
-								</section>
-								<!-- /Block categories module -->
-								
-								
-								
-								<!-- Block Newsletter module-->
-								<div id="newsletter_block_left" class="block">
-									<h4>Рассылка</h4>
-									<div class="block_content">
-										<form action="" method="post">
-											<div class="form-group" >
-												<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="Введите ваш e-mail" />
-												<button type="submit" name="submitNewsletter" class="btn btn-default btn-sm">
-													<span>OK</span>
-												</button>
-												<input type="hidden" name="action" value="0" />
-											</div>
-										</form>
-									</div>
-								</div>
-								<!-- /Block Newsletter module-->
-
-								<section id="social_block" class="col-xs-12 col-sm-3">
-								<h4>Подпишитесь на наши обновления</h4>
-									<ul>
-										<li class="facebook">
-											<a target="_blank" href="https://www.facebook.com/prestashop" title="Facebook">
-												<span>Facebook</span>
-											</a>
-										</li>
-										<li class="twitter">
-											<a target="_blank" href="https://www.twitter.com/prestashop" title="Twitter">
-												<span>Twitter</span>
-											</a>
-										</li>
-										<li class="google-plus">
-											<a target="_blank" href="https://www.google.com/+prestashop" title="Google+">
-												<span>Google+</span>
-											</a>
-										</li>
-									</ul>
-								</section>
-
-
 							</div>
 						</footer>
 					</div>
@@ -1403,4 +729,4 @@ var wishlistProductsIds = false;
 			</div>
 		</div><!-- #page -->
 	</body>
-</html>
+{% endblock %}
