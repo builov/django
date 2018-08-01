@@ -2,42 +2,37 @@ from django.shortcuts import render, redirect, get_list_or_404, get_object_or_40
 
 from django.urls import reverse_lazy
 
-from django.http import HttpResponse
+from django.views.generic import View, CreateView, ListView, DetailView
 
 from . import models
 
 from . import forms
 
+class ProductList(ListView):
 
-def index(request):
-    # query = models.Product.objects.all()
-    query = get_list_or_404(models.Product)
+    context_object_name = 'query'
 
-    return render(request, 'products/page.html', {'query': query})
+    template_name = 'products/page.html'
 
-
-def product_detail(request, pk):
-    instance = get_object_or_404(models.Product, id=pk)
-
-    return render(request, 'products/card.html', {'instance': instance})
+    queryset = get_list_or_404(models.Product)
 
 
-def product_edit(request):
+class ProductDetail(DetailView):
 
-    success_url = reverse_lazy('products:index')
+    model = models.Product
 
-    form = forms.ProductForm(request.POST, request.FILES)
+    context_object_name = 'instance'
 
-    if request.method == 'POST':
+    template_name = 'products/card.html'
 
-        if form.is_valid():
 
-            form.save()
+class ProductCreate(CreateView):
 
-            #return redirect(success_url)
+    model = models.Product
 
-        print('*' * 50)
+    form_class = forms.ProductForm
 
-        print(form.errors)
+    success_url = '/product/create'
 
-    return render(request, 'products/edit.html', {'form': form})
+    template_name = 'products/edit.html'
+
