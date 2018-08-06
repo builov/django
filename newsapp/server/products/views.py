@@ -10,11 +10,12 @@ from . import forms
 
 class ProductList(ListView):
 
+    queryset = get_list_or_404(models.Product)
+
     context_object_name = 'query'
 
     template_name = 'products/page.html'
 
-    queryset = get_list_or_404(models.Product)
 
 
 class ProductDetail(DetailView):
@@ -32,7 +33,7 @@ class ProductCreate(CreateView):
 
     form_class = forms.ProductForm
 
-    success_url = '/product/create'
-
     template_name = 'products/edit.html'
+
+    success_url = '/product/create'
 

@@ -24,7 +24,6 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-	#path('', index),
-	#path('<int:pk>/', product_detail, name='detail')
-	path('', include('products.urls'))
+    path('auth', include('security.urls', namespace='security')),
+	path('', include('products.urls', namespace='products'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

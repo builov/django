@@ -176,6 +176,8 @@
 						</div>
 					</div>
 
+					 <h2>{{ user }}</h2>
+
 <!-- /Breadcrumb -->
                 	<div id="columns" class="container">
 					<div class="row">
@@ -343,10 +345,10 @@
 												<div class="productInner">
 													<div class="left-block">
 														<div class="product-image-container">
-															<a class="product_img_link"	href="{% url 'detail' itm.id %}" title="{{ itm.name }}" itemprop="url">
+															<a class="product_img_link"	 href="{% url 'products:detail' itm.id %}" title="{{ itm.name }}" itemprop="url">
 																<img class="replace-2x img-responsive" src="/media/{{ itm.image }}" alt="{{ itm.name }}" title="{{ itm.name }}" itemprop="image" />
 															</a>
-															<a class="quick-view" href="{% url 'detail' itm.id %}" rel="{% url 'detail' itm.id %}">
+															<a class="quick-view" href="{% url 'products:detail' itm.id %}" rel="{% url 'products:detail' itm.id %}">
 																<span>Быстрый просмотр</span>
 															</a>
 															<a class="sale-box" href="">
@@ -359,7 +361,7 @@
 													</div>
 													<div class="right-block">
 														<h5 itemprop="name">
-															<a class="product-name" href="{% url 'detail' itm.id %}" title="{{ itm.name }}" itemprop="url" >
+															<a class="product-name" href="{% url 'products:detail' itm.id %}" title="{{ itm.name }}" itemprop="url" >
 																<span class="list-name">{{ itm.name }}</span>
 																<span class="grid-name">{{ itm.name }}</span>
 															</a>
@@ -413,7 +415,7 @@
 																<a class="add_to_compare" href="" data-id-product="2" title="Добавить к сравнению"><span>Добавить к сравнению</span></a>
 															</div>
 															<div class="moreBox ">
-																<a itemprop="url" href="{% url 'detail' itm.id %}" title="См.">
+																<a itemprop="url" href="{% url 'products:detail' itm.id %}" title="См.">
 																	<span>Еще</span>
 																</a>
 															</div>

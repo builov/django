@@ -36,6 +36,8 @@ INSTALLED_APPS = [
 	
 	'categories',
 
+    'security',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
